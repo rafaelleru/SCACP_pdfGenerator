@@ -44,17 +44,27 @@ contenido = archivo.read()
 if contenido != None:
     print("Archivo abierto")
 
-patron = re.compile('\<strong class\=\"tituloGift\"\>[0-9a-zA-Z ?¿]+\<\/strong\>')
-contenido = contenido.splitlines()
-#print(contenido)
-for l in contenido:
-    matcher = patron.search(l)
-    if matcher:
-        m = matcher.group(0)
-    #print(l+"\n***********************************************************\n")
+#Obtener lista con preguntas
 
+patron_pregunta = re.compile('<strong class="tituloGift">[\w|\W]+?</strong>')
+patron_respuesta = re.compile('<strong>[\w|\W]+?</strong>')
+
+contenido = contenido.splitlines()
+
+lista_respuestas = []
+lista_preguntas = []
+
+for l in contenido:
+    #Buscamos las preguntas
+    matcher = patron_pregunta.findall(l)
+    if matcher:
+        for m in matcher:
+            lista_preguntas.append(m)
+    #Buscamos las respuestas
+    matcher = patron_respuesta.findall(l)
+    if matcher:
+        for m in matcher:
+            lista_respuestas.append(m)
 
 archivo.close()
 print("Archivo cerrado")
-
-print(matcher)
