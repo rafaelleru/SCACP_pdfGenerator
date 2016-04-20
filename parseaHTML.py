@@ -4,6 +4,13 @@ class Pregunta(object):
     respuestas[]
     correcta
 
-    def __init__(self):
+    def __init__(self, enunciado, respuestas, correcta):
         super(Pregunta, self).__init__()
-        self.arg = arg
+        self.enunciado = enunciado
+        self.respuestas = respuestas
+        self.correcta = correcta
+
+def NuevaPregunta():
+
+def leeHTML(archivo):
+    archivo.readline()
