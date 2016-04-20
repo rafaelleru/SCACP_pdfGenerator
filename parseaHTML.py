@@ -56,15 +56,19 @@ lista_preguntas = []
 
 for l in contenido:
     #Buscamos las preguntas
-    matcher = patron_pregunta.findall(l)
+    matcher = patron_pregunta.match(l)
     if matcher:
         for m in matcher:
             lista_preguntas.append(m)
     #Buscamos las respuestas
     matcher = patron_respuesta.findall(l)
+    print(matcher)
     if matcher:
         for m in matcher:
             lista_respuestas.append(m)
-
+for i in lista_preguntas:
+    print(i)
+for j in lista_respuestas:
+    print(j)
 archivo.close()
 print("Archivo cerrado")
