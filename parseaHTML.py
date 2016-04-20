@@ -1,3 +1,4 @@
+'''
 class Pregunta(object):
     """Pregunta del cuestionario"""
     enunciado
@@ -33,3 +34,27 @@ def leeHTML(archivo):
             enunciado = ""
             while caracter is not "<":
                 enunciado = enunciado + caracter
+'''
+
+import re, time
+
+archivo = open('cuestionario.html')
+contenido = archivo.read()
+
+if contenido != None:
+    print("Archivo abierto")
+
+patron = re.compile('\<strong class\=\"tituloGift\"\>[0-9a-zA-Z ?¿]+\<\/strong\>')
+contenido = contenido.splitlines()
+#print(contenido)
+for l in contenido:
+    matcher = patron.search(l)
+    if matcher:
+        m = matcher.group(0)
+    #print(l+"\n***********************************************************\n")
+
+
+archivo.close()
+print("Archivo cerrado")
+
+print(matcher)

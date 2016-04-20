@@ -1,0 +1,1067 @@
+
+
+
+
+
+
+
+
+
+<!--  jsp:include page="../usuario/checkLogin.jsp" /-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+    
+    
+    
+    
+   	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Cuestionario Corregido</title>
+     	    
+     	    
+    <link type="text/css" rel="stylesheet" href="content/css/main.css" />
+       	    
+       	    
+       	    
+   </head>
+    
+    
+    
+    <body>
+        <table border="0" cellpadding="2" cellspacing="2" width="98%" style="margin-left: 10px;" >
+            <tr>
+                <td height="30" colspan="2" align="center" style="border: 0 none;">
+                    <header>
+	<strong>Sistema Colaborativo de Aprendizaje basado en Cuestionarios y Actividades</strong>
+</header>
+                </td>
+            </tr>
+            <tr>
+                <td height="15" colspan="2" style="text-align: right; border: 0 none;">
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+   </head>
+  
+    <body>
+    	
+		
+      		
+      
+    </body>
+</html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sistema Colaborativo de Aprendizaje basado en Cuestionarios y Actividades</title>
+
+<link type="text/css" rel="stylesheet" href="content/css/main.css" />
+
+	<script type="text/javascript">
+	
+		function cambiaGrupoCurrentUser(){
+			document.cambiarGrupoCurrentUserForm.submit();
+		}
+		
+		
+		function haceVisibleEvaluacion(idgrupo){
+			this.location.href="haceVisibleEvaluacionGrupo.action?idgrupo="+idgrupo;
+		}
+		
+		function haceVisibleITS(idopcion){
+			this.location.href="haceVisibleITS.action?idopcion="+idopcion;
+		}
+		
+		function inicio(){
+			
+			
+			
+		}
+		
+		
+	</script>
+
+
+
+</head>
+
+<body onload="inicio();">
+
+	<div id="c" style="width: 99%">
+		
+		<p style="margin: 0 0 0px;">
+			<table style="width: 100%; margin: 0 0 0px;">
+			<tbody>
+				<tr style="background: #EEE; border: 0px;">
+					<td style="width: 60%; border-bottom: none;">
+                		
+                		<form id="cambiarGrupoCurrentUser" name="cambiarGrupoCurrentUserForm" action="cambiarGrupoCurrentUser.action" method="post">
+<table class="wwFormTable">
+                		<strong>Ingeniería del Conocimiento: Curso 2016</strong> 
+                		&nbsp;	
+	                		<select id="idgrupo" name="idgrupo" onchange="javascript:cambiaGrupoCurrentUser()" style="vertical-align: bottom;">
+	                			<option value="31" selected>Ingeniería del Conocimiento: Curso 2016</option>
+<option value="32">Inteligencia Artificial: Grupo A 2016</option>
+
+	                		</select>
+	                		  
+                		</table></form>
+
+
+
+
+                			                		
+					</td>
+					
+					<td style="width: 40%; border-bottom: none; text-align: right;">
+		                Bienvenido, <strong>LEYVA RUIZ, RAFAEL</strong>
+					</td>
+				</tr>
+				<tr style="background: #EEE; border: 0px;">
+					<td style="width: 60%; border-bottom: none;">
+						
+                			<a href="content/pdf/Manual_alumno.pdf"><img src="content/img/icono_help.png" alt="Ayuda" style="margin: 0px; vertical-align: middle;"></a>
+                		
+					</td>
+					
+					<td style="width: 40%; border-bottom: none; text-align: right;">
+		                
+						<a href="preEditarCurrentUser.action">Editar información</a> 
+						&nbsp;|&nbsp;
+						
+						<a href="logoutUsuario.action">Logout</a>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+        </p>
+        		
+	</div>
+
+
+</body>
+
+</html>
+                </td>
+            </tr>
+            <tr>
+                <td width="17%" height="600" style="border: 0 none;">
+                    
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <head>
+   </head>
+  
+    <body>
+    	
+		
+      		
+      
+    </body>
+</html>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Sistema Colaborativo de Aprendizaje basado en Cuestionarios y Actividades</title>
+
+	<link type="text/css" rel="stylesheet" href="content/css/main.css" />
+	<script src="content/js/jquery-1.10.2.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		function ocultaAbreSubmenu(submenu){
+				
+			$( ".Submenu"+ submenu ).each(function() {
+	
+				if($(this).css('display') == 'none'){
+					 $(this).slideDown(400);
+					 
+					 if(submenu == '1'){
+						abreSubmenu('1_1');
+						abreSubmenu('1_2');
+						abreSubmenu('1_3');
+						abreSubmenu('1_4');
+					}
+					
+					if(submenu == '2'){
+						abreSubmenu('2_1');
+						abreSubmenu('2_2');
+						abreSubmenu('2_3');
+					}
+					
+					if(submenu == '4'){
+						abreSubmenu('4_1');
+						abreSubmenu('4_2');
+						abreSubmenu('4_3');
+					}
+					
+					if(submenu == '5'){
+						abreSubmenu('5_1');
+						abreSubmenu('5_2');
+					}
+					
+					if(submenu == '6'){
+						abreSubmenu('6_1');
+						abreSubmenu('6_2');
+						abreSubmenu('6_3');
+					}	
+					
+					
+					
+					//ITS
+					
+						
+						if(submenu == '9'){
+							abreSubmenu('9_1');
+						}
+						
+					
+						
+				}else{
+					$( this ).slideUp(400);
+					
+					if(submenu == '1'){
+						ocultaSubmenu('1_1');
+						ocultaSubmenu('1_2');
+						ocultaSubmenu('1_3');
+						ocultaSubmenu('1_4');
+					}
+					
+					if(submenu == '2'){
+						ocultaSubmenu('2_1');
+						ocultaSubmenu('2_2');
+						ocultaSubmenu('2_3');
+					}
+					
+					if(submenu == '4'){
+						ocultaSubmenu('4_1');
+						ocultaSubmenu('4_2');
+						ocultaSubmenu('4_3');
+					}
+					
+					if(submenu == '5'){
+						ocultaSubmenu('5_1');
+						ocultaSubmenu('5_2');
+					}
+					
+					if(submenu == '6'){
+						ocultaSubmenu('6_1');
+						ocultaSubmenu('6_2');
+						ocultaSubmenu('6_3');
+					}
+					
+					
+					//ITS
+					
+						
+						if(submenu == '9'){
+							ocultaSubmenu('9_1');
+						}
+						
+					
+						
+				
+				}
+			});
+		}
+		
+		function ocultaSubmenu(submenu){
+			
+			$( ".Submenu"+ submenu ).each(function() {
+	
+				if($(this).css('display') != 'none'){
+					$( this ).slideUp(400);
+				}
+			});
+		}
+		
+		function abreSubmenu(submenu){
+			
+			$( ".Submenu"+ submenu ).each(function() {
+	
+				if($(this).css('display') == 'none'){
+					 $(this).slideDown(400);
+				}
+			});
+		}
+		
+		function compruebaAlertValidar(){
+			
+			
+			
+		}
+		
+		
+		function compruebaAlertAlumnoPendiente(){
+			
+			
+			
+		}
+	</script>
+
+
+</head>
+
+<body>
+
+ <div id="a">
+ 
+ 	<h4 style="width: 200px;">OPCIONES</h4>
+ 	
+	
+	
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+
+		 
+		
+		<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(2)">Cuestionarios</h3>
+	
+	
+
+	
+		 
+		
+		<div class="Submenu2" style="display: none;"  >
+			<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('2_1')">Cuestionarios</h5>
+		</div>
+	
+	
+	
+		
+		
+		 
+		<div class="Submenu2_1"  style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="listCuestionariosByUser.action">Mis cuestionarios</a></strong></p>
+		</div>
+	
+	
+	
+		 
+		<div class="Submenu2_1" style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="preGenerarCuestionario.action">Generar por objetivos</a></strong></p>
+		</div>
+		
+	
+		 
+		<div class="Submenu2_1"  style="display: none;">
+			
+			<p class="elementoMenuLateral"><strong><a href="preGenerarCuestionarioFallos.action">Generar por índice de fallos</a></strong></p>
+		</div>
+		
+	
+	
+		
+	
+		 
+		<div class="Submenu2_1"  style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="preRealizarCuestionario.action">Realizar cuestionario</a></strong></p>
+		</div>
+	
+	
+
+	
+	
+		
+		<div class="Submenu2" style="display: none;"  >
+			<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('2_2')">Cuestiones</h5>
+		</div>
+		
+	
+	
+	
+	
+	
+		 
+		<div class="Submenu2_2"  style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="listAllCuestionesByCurrentUser.action">Mis cuestiones</a></strong></p>
+		</div>
+	
+	
+	
+		 
+		<div class="Submenu2_2" style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="listCuestionesNVByUser.action">Mis cuestiones propuestas</a></strong></p>
+		</div>
+		
+	
+			
+	
+	
+		
+		<div class="Submenu2" style="display: none;"  >
+			<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('2_3')">Otras opciones</h5>
+		</div>
+		
+	
+
+		 
+		
+		<div class="Submenu2_3" style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="preAddCuestionNV.action">Proponer cuestión</a></strong></p>
+		</div>
+		
+	
+	
+	
+		 
+		<div class="Submenu2_3" style="display: none;">
+			
+			<p class="elementoMenuLateral"><strong><a href="prePreviewCuestionario.action">Previsualizar cuestionario</a></strong></p>
+		</div>
+		
+	
+	
+	
+	
+		 
+		
+		<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(3)">Pruebas de evaluación</h3>
+	
+	
+
+	
+		
+		
+		 
+		<div class="Submenu3" style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="listAllPruebasByAlumno.action">Mis pruebas</a></strong></p>
+		</div>
+	
+	
+	
+	
+	
+	
+	<!--  NUEVO 20121211 -->
+		 
+		
+		<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(4)">Actividades/Respuestas</h3>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	<div class="Submenu4_1" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="listAllPreguntasForAlumnos.action">Actividades asignables</a></strong></p>
+	</div>
+	
+	
+	
+		
+	<div class="Submenu4_1" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="listAllPreguntasAsignadasByUser.action">Mis actividades asignadas</a></strong></p>
+	</div>
+	
+	
+	
+
+	
+	
+	
+	
+	
+		
+	<div class="Submenu4" style="display: none;" >
+		<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('4_3')">Otras opciones</h5>
+	</div>
+	
+	
+	
+		
+	<div class="Submenu4_3" style="display: none;">
+		
+		<p class="elementoMenuLateral"><strong><a href="listAllPreguntasByCurrentUser.action">Mis actividades propuestas</a></strong></p>
+	</div>
+	
+	
+	
+
+	
+		
+	<div class="Submenu4_3" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="listAllPreguntasCerradas.action">Actividades cerradas</a></strong></p>
+	</div>
+	
+	
+		
+	<div class="Submenu4_3" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="preAddPregunta.action">Proponer actividad</a></strong></p>
+	</div>
+	
+	<!--  FIN NUEVO 20121211 -->
+	
+
+	
+	
+	
+		 
+		
+		<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(5)">Evaluación</h3>
+	
+	
+	
+		 
+		
+		<div class="Submenu5" style="display: none;" >
+			<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('5_1')">Pantalla evaluación</h5>
+		</div>
+	
+	
+	
+	
+	
+		
+	<div class="Submenu5_1"  style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="pantallaEvaluacionByUser.action">Pantalla de evaluación</a></strong></p>
+	</div>
+	
+	
+	
+		 
+		
+		<div class="Submenu5"  style="display: none;"  >
+			<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('5_2')">Otros resultados</h5>
+		</div>
+	
+	
+	
+	
+		 
+		<div class="Submenu5_2" style="display: none;">
+			
+			<p class="elementoMenuLateral"><strong><a href="listResultadosCuestionariosByCurrentUser.action">Mis resultados (Cuestionarios)</a></strong></p>
+		</div>
+
+		<div class="Submenu5_2" style="display: none;">
+			
+			<p class="elementoMenuLateral"><strong><a href="muestraResultadoCuestionesCurrentUser.action">Mis resultados (Cuestiones)</a></strong></p>
+		</div>
+	
+	
+	
+		 
+	<div class="Submenu5_2" style="display: none;">
+		
+		<p class="elementoMenuLateral"><strong><a href="listResultadosPruebasByCurrentUser.action">Mis resultados (Pruebas)</a></strong></p>
+	</div>
+	
+	
+		
+	<div class="Submenu5_2" style="display: none;">
+		
+		<p class="elementoMenuLateral"><strong><a href="listResultadosPreguntasCurrentUser.action">Mis resultados (Actividades)</a></strong></p>
+	</div>
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	<!--  NUEVO: CONCEPTOS (ABRIL 2013)  -->
+	<!--  *****************************  -->
+	<!--  *****************************  -->
+	
+		 
+		<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(6)">Conceptos</h3>
+	
+	
+		 
+	
+		<div class="Submenu6"  style="display: none;"  >
+			<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('6_1')">Conceptos</h5>
+		</div>
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+	
+	
+	
+	
+		
+	<!--  FIN CONCEPTOS (ABRIL 2013)  -->
+	<!--  *****************************  -->
+	<!--  *****************************  -->
+
+
+	<!--  REPRESENTACION CONOCIMIENTO  -->
+	<!--  *****************************  -->
+	<!--  *****************************  -->
+
+		 
+		
+		<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(10)">Representación del conocimiento</h3>
+	
+	
+
+	
+		 
+		<div class="Submenu10" style="display: none;"  >
+		
+		<p class="elementoMenuLateral"><strong><a href="visorConceptosAsignatura.action">Mapa conceptual</a></strong></p>
+	</div>
+	
+	<div class="Submenu10" style="display: none;"  >
+		
+		<p class="elementoMenuLateral"><strong><a href="tagCloudConceptosAsignatura.action">Tag cloud</a></strong></p>
+	</div>
+	
+	<div class="Submenu10" style="display: none;"  >
+		
+		<p class="elementoMenuLateral"><strong><a href="ontologiaConceptosAsignatura.action">Ontología</a></strong></p>
+	</div>	
+		
+
+	
+	
+	
+	<!--  ITS  -->
+	<!--  *****************************  -->
+	<!--  *****************************  -->
+	
+	
+	
+			 
+			<h3 style="width: 200px; cursor: pointer; margin-top: 18px;"  onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(9)">Tutor inteligente</h3>
+		
+		
+			 
+		
+			<div class="Submenu9"  style="display: none;"  >
+				<h5 style="cursor: pointer;"  onmouseover="javascript:this.style.textDecoration= 'underline';" onmouseout="javascript:this.style.textDecoration= 'none'; " onclick="ocultaAbreSubmenu('9_1')">Materias de aprendizaje</h5>
+			</div>
+		
+		
+	
+		
+		
+	
+			
+		<div class="Submenu9_1"  style="display: none;" >
+			
+			<p class="elementoMenuLateral"><strong><a href="listMateriasForAlumnos.action">Materias de aprendizaje</a></strong></p>
+		</div>
+		
+	
+	
+	
+	
+	<!--  LOGS  -->
+	<!--  *****************************  -->
+	<!--  *****************************  -->
+		
+		
+	
+		
+	
+	<h3 style="width: 200px; cursor: pointer; margin-top: 18px;" onmouseover="javascript:this.style.textDecoration= 'underline'; " onmouseout="javascript:this.style.textDecoration= 'none'" onclick="ocultaAbreSubmenu(8)">Otras opciones</h3>
+	
+	
+	<div class="Submenu8" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="preSolicitarNuevoGrupoAlumno.action">Solicitud nueva asignatura</a></strong></p>
+	</div>
+	
+	
+	
+	<div class="Submenu8"  style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="preEditarCurrentUser.action">Editar mi usuario</a></strong></p>
+	</div>
+	
+	<div class="Submenu8" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="toIndex.action">Índice de opciones</a></strong></p>
+	</div>
+	
+	
+	<div class="Submenu8" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="http://ic.ugr.es:8026/prd/">Acceso a DocuWiki</a></strong></p>
+	</div>
+	
+	
+	<div class="Submenu8" style="display: none;" >
+		
+		<p class="elementoMenuLateral"><strong><a href="logoutUsuario.action">Salir del sistema</a></strong></p>
+	</div>
+
+
+	</div>
+	
+	
+	
+</body>
+
+
+
+</html>
+                </td>
+                <td width="83%" style="border: 0 none;">
+                    
+
+ 
+
+
+
+
+
+
+
+
+<html>
+    <head>
+   </head>
+  
+    <body>
+    	
+		
+      		
+      
+    </body>
+</html>
+
+<html>
+<head>
+
+ 
+
+<title>Cuestionario Corregido</title>
+
+	<link type="text/css" rel="stylesheet" href="content/css/main.css" />
+	<link href="content/css/jquery/jquery-ui-1.10.3.custom.css" rel="stylesheet" type="text/css"/>
+	
+	<script src="content/js/jquery-1.10.2.min.js"></script>
+	<script src="content/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+	<script type="text/javascript">
+		
+		//Sustituye al onload. Hace exactamente lo mismo.
+	  	$( function(){
+	        inicio();
+	    });
+	
+		function inicio(){
+			
+		}
+	
+		function aceptar(){
+			document.realizaCuestionarioForm.submit();
+		}
+		
+	</script>
+	
+	
+	
+</head>
+
+
+<body>
+
+ 	<div id="a">
+					
+		<h1>Cuestionario Corregido</h1>
+	 
+		<div class="enlace">
+ 			
+			<a href="listResultadosCuestionariosByCurrentUser.action">Mis Resultados</a>
+		</div>
+		
+		<div class="enlace"> 
+			
+			<a href="toIndex.action">Al índice</a>
+		</div>
+		
+		<br/>
+		
+		<div id="c" style="font-size: 13px; ">
+			<p> <strong>SU PUNTUACIÓN ES</strong>: 9.833333<strong> SOBRE </strong>100.0 <strong>PUNTOS POSIBLES.</strong></p>
+			<br/>
+			<p> <strong>PORCENTAJE DE ACIERTO:</strong> 9,83 %</p>
+			
+			
+				<br/>
+				<p> <strong>Ha fallado cuestiones sobre los siguientes conceptos de la asignatura:</strong> </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sbc consistencia </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- fuentes de conocimiento </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- inteligencia artificial </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- conocimiento incorrecto </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- conocimiento correcto </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- tipo de sistema experto </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ontologías </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sistemas basados en conocimiento </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- experto humano </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lenguaje natural </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- tarea de validación </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lógica por defecto </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- red semántica </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- inferencias </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- ingeniero del conocimiento </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- formalismo de representación </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- algoritmos de inferencia </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- modelos de representación </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- regla de bayes </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- web semántica </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- mycin </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- frame </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- inteligencia </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sistema experto </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sistema experto </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lógica de primer orden </p>
+				
+					<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- lógica clásica </p>
+				
+			
+		</div>
+		
+		<div class="cajaGift">
+		
+			<div style="font-size: 13px; ">
+				<strong>NOMBRE:</strong> Ic
+			</div>
+			
+				
+			
+			<br/>
+				
+			<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Los algoritmos de inferencia:.</strong>		&nbsp;Los algoritmos de inferencia:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi324_3071" value="true"> Son independientes del problema pero dependientes del modelo formal del conocimiento usado para solucionar el problema.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi324_3072" value="true"> Dependen tanto del problema como del modelo formal del conocimiento, pero es más relevante el modelo formal.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi324_3073" value="true"> Independientes del modelo formal del conocimiento, pero dependientes del problema.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Son independientes del problema pero dependientes del modelo formal del conocimiento usado para solucionar el problema. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Los sistemas basados en conocimiento son la mejor alternativa para todos los problemas.___________ .</strong>		&nbsp;Los sistemas basados en conocimiento son la mejor alternativa para todos los problemas..ReSPuEsTa. 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse327" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Como contraejemplo, si un problema tiene solución algorítmica eficiente no tiene sentido resolverlo mediante un sistema mas complejo como un SBC</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse327" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿De qué son dependientes los algoritmos de inferencia?.</strong>		&nbsp;¿De qué son dependientes los algoritmos de inferencia?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi329_3130" value="true"> Del problema que se pretende resolver<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi329_3131" value="true"> Del formalismo de representación del conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi329_3132" value="true"> De ninguno de los anteriores<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Del formalismo de representación del conocimiento (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Problemas en los que usar SBC.</strong>		&nbsp;Indique cuál de los siguientes problemas no es adecuado el uso de un SBC		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi330_3079" value="true"> Diagnosticar infecciones en la sangre.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi330_3080" value="true"> Planificación y control de una planta de producción de coches.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi330_3081" value="true"> Analizador sintáctico de código en c.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Analizador sintáctico de código en c. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Un Sistema Basado en Conocimiento es capaz de resolver problemas con información incompleta..</strong>		&nbsp;Un Sistema Basado en Conocimiento es capaz de resolver problemas con información incompleta.		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse340" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse340" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">MYCIN fue el primer Sistema Basado en Conocimiento..</strong>		&nbsp;MYCIN fue el primer Sistema Basado en Conocimiento.		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse342" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Se considera que el primero fue DENDRAL</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse342" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Los SBCs almacenan la representación explícita del conocimiento, pero no hacen uso de él..</strong>		&nbsp;Los SBCs almacenan la representación explícita del conocimiento, pero no hacen uso de él.		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse347" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Error</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse347" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Indica qué afirmación es verdadera:.</strong>		&nbsp;Indica qué afirmación es verdadera:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi348_3297" value="true"> El desarrollador de un SBC no se encarga de extraer el conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi348_3298" value="true"> El conocimiento extraido se almacena de forma genérica para todos los SBC<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi348_3299" value="true"> Los SBC disponen de un número reducido de datos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>El desarrollador de un SBC no se encarga de extraer el conocimiento (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿Cuál de las siguientes no es una característica de un SBC?.</strong>		&nbsp;¿Cuál de las siguientes no es una característica de un SBC?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi350_3359" value="true"> Compensa errores que se puedan producir en la introducción del conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi350_3360" value="true"> No necesitan de un algoritmo específico diseñado para el problema<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi350_3361" value="true"> Se puede combinar la experiencia de varios SBC<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi350_3362" value="true"> No precisa de gran cantidad de requisitos físicos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Compensa errores que se puedan producir en la introducción del conocimiento (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">La tarea de validación de un SBC la realiza:.</strong>		&nbsp;La tarea de validación de un SBC la realiza:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi352_3334" value="true"> El Ingeniero de Conocimiento. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi352_3335" value="true"> Los expertos. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi352_3336" value="true"> El gestor.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Los expertos.  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Los algoritmos de inferencia son: Altamente independiente del problema y dependientes del formalismo de representacion del conocimiento.</strong>		&nbsp;Los algoritmos de inferencia son: Altamente independiente del problema y dependientes del formalismo de representacion del conocimiento		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse372" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse372" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Un Sistema Basado en Conocimiento.</strong>		&nbsp;Un Sistema Basado en Conocimiento		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi373_3594" value="true"> tiene un funcionamiento algorítmico<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi373_3595" value="true"> representa el conocimiento y razona separadamente <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi373_3596" value="true"> el razonador es parte de su información del conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi373_3597" value="true"> es un tipo de Sistema Experto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>representa el conocimiento y razona separadamente  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿Cuál suele ser la fase más compleja en la construcción de un sistema experto?: .</strong>		&nbsp;¿Cuál suele ser la fase más compleja en la construcción de un sistema experto?: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3428" value="true"> Identificar la tarea, análisis de viabilidad e impacto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3429" value="true"> Adquirir conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3430" value="true"> Conceptualizar<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3431" value="true"> Formalizar<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3432" value="true"> Implementar la formalizacion<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3433" value="true"> Verificar y Validar<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi378_3434" value="true"> Todas son igual de complejas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Adquirir conocimiento (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Solamente se debe extraer información de un único Experto para evitar contradicciones .</strong>		&nbsp;Solamente se debe extraer información de un único Experto para evitar contradicciones 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse387" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">El hacerlo de varios expertos permite obtener un conocimiento mas rico, pero habría que abordar el problema de la posible inconsistencia del mismo</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse387" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">El motor de inferencia es independiente del problema y del formalismo de representación del conocimiento. .</strong>		&nbsp;El motor de inferencia es independiente del problema y del formalismo de representación del conocimiento. 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse388" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Es independiente del problema, pero dependiente del formalismo de representación del conocimiento</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse388" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Durante el desarrollo de un SBC el ingeniero de conocimiento se encarga de:.</strong>		&nbsp;Durante el desarrollo de un SBC el ingeniero de conocimiento se encarga de:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi390_3459" value="true"> Implementar el SBC<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi390_3460" value="true"> Validar el conocimiento del SBC<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi390_3461" value="true"> Extraer el conocimiento necesario de los expertos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi390_3462" value="true"> Todas las anteriores son correctas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Extraer el conocimiento necesario de los expertos (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿Cuál de las siguientes no es una etapa del ciclo de vida  para el desarrollo de un SBC?.</strong>		&nbsp;¿Cuál de las siguientes no es una etapa del ciclo de vida  para el desarrollo de un SBC?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi391_3625" value="true"> Estructuración del conocimiento en conceptos y tareas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi391_3626" value="true"> Identificación de la tarea<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi391_3627" value="true"> Formalización del conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi391_3628" value="true"> Ninguna de las anteriores es correcta<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ninguna de las anteriores es correcta (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Un Sistema Experto.</strong>		&nbsp;Un Sistema Experto		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi397_3651" value="true"> es invariable en el tiempo<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi397_3652" value="true"> interactua solo con otros sistemas expertos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi397_3653" value="true"> emulan el comportamiento de una máquina experta<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi397_3654" value="true"> ha de justificar su solución obtenida<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>ha de justificar su solución obtenida (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">El motor de Inferencia depende de.</strong>		&nbsp;El motor de Inferencia depende de		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi420_3752" value="true"> el problema pero no del formalismo de representación<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi420_3753" value="true"> el formalismo de representación y del problema<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi420_3754" value="true"> el formalismo de representación pero no del problema<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi420_3755" value="true"> ni del problema ni del formalismo de representación<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>el formalismo de representación pero no del problema (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Empareja las palabras con las que son asociadas..</strong>		&nbsp;Empareja las palabras con las que son asociadas.		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Folksonomía &nbsp;->&nbsp;		<select name="match430">
+<option value=" etiquetado" selected> etiquetado</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taxonomía &nbsp;->&nbsp;		<select name="match430">
+<option value=" etiquetado" selected> etiquetado</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tesauros &nbsp;->&nbsp;		<select name="match430">
+<option value=" etiquetado" selected> etiquetado</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontología &nbsp;->&nbsp;		<select name="match430">
+<option value=" etiquetado" selected> etiquetado</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Folksonomía  ->  etiquetado </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Taxonomía  ->  clasificación </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Tesauros  ->  terminología </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ontología  ->  red semántica </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.25</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿Con qué se suele asociar una taxonomía más?.</strong>		&nbsp;¿Con qué se suele asociar una taxonomía más?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi431_3938" value="true"> una red semántica <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi431_3939" value="true"> un vocabulario controlado <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi431_3940" value="true"> una categorización<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>una categorización (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿Qué herramienta suele tener la complejidad más grande?.</strong>		&nbsp;¿Qué herramienta suele tener la complejidad más grande?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi432_3967" value="true"> Tesauro <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi432_3968" value="true"> Folksonomía<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi432_3969" value="true"> Taxonomía<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Tesauro  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">DENDRAL 1965 .</strong>		&nbsp;DENDRAL 1965 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi441_3825" value="true"> identifica estructuras de minerales <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi441_3826" value="true"> identifica estructuras moléculas orgánicas <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi441_3827" value="true"> identifica infecciones en sangre, introduce Factores de Certeza<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>identifica estructuras moléculas orgánicas  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Un problema no adecuado para SBC seria .</strong>		&nbsp;Un problema no adecuado para SBC seria 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi442_3991" value="true"> un problema con requisitos no subjetivos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi442_3992" value="true"> un problema donde no se dispone de fuentes de conocimiento <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi442_3993" value="true"> un problema que  puede ser resueltos aplicando algorítmos clásicos o la investigación operativa<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>un problema donde no se dispone de fuentes de conocimiento  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>un problema que  puede ser resueltos aplicando algorítmos clásicos o la investigación operativa (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">El motor de inferencia es ___________..</strong>		&nbsp;El motor de inferencia es  ____________ .		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi443_3994" value="true"> altamente independiente del problema, pero dependiente del formalismo de representación del conocimiento <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi443_3995" value="true"> dependiente del problema <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi443_3996" value="true"> altamente independiente del problema y también dependiente de representación del conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>altamente independiente del problema, pero dependiente del formalismo de representación del conocimiento  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Marcar entre las siguientes las afirmaciones correctas sobre el ciclo de vida para el desarrollo de un SBC .</strong>		&nbsp;Marcar entre las siguientes las afirmaciones correctas sobre el ciclo de vida para el desarrollo de un SBC 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi445_4001" value="true"> Todas las fases son importantes en sí <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi445_4002" value="true"> Las fases mas importantes son Identificar, implementar y verificar <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi445_4003" value="true"> la fase mas importante es la adquisición del conocimiento <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi445_4004" value="true"> la fase mas compleja es la adquisición del conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Todas las fases son importantes en sí  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>la fase mas compleja es la adquisición del conocimiento (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Enumerar las fases en el ciclo de educcion de conocimiento. .</strong>		&nbsp;Enumerar las fases en el ciclo de educcion de conocimiento. 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Transcripcion &nbsp;->&nbsp;		<select name="match467">
+<option value=" 3" selected> 3</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluacion &nbsp;->&nbsp;		<select name="match467">
+<option value=" 3" selected> 3</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preparacion &nbsp;->&nbsp;		<select name="match467">
+<option value=" 3" selected> 3</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sesion &nbsp;->&nbsp;		<select name="match467">
+<option value=" 3" selected> 3</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analisis &nbsp;->&nbsp;		<select name="match467">
+<option value=" 3" selected> 3</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Transcripcion  ->  3 </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Evaluacion  ->  5 </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Preparacion  ->  1 </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Sesion  ->  2 </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Analisis  ->  4 </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.2</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Adquisición de Conocimiento.</strong>		&nbsp;¿Cuánto debe durar una entrevista estructurada con un experto?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi490_4138" value="true"> De 1 a 3 horas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi490_4139" value="true"> De 3 a 8 horas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi490_4140" value="true"> De 3 a 8 horas con descansos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi490_4141" value="true"> Todo el tiempo que sea necesario<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>De 1 a 3 horas (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Adquisición de Conocimiento.</strong>		&nbsp;Suponga que es un recién graduado en Informática y lo contratan en SIS para trabajar en la construcción de un SBC pero no tiene ninguna experiencia laboral como Ingeniero del Conocimiento. A los pocos días lo mandan para realizar su primera entrevista con un experto para un proyecto nuevo. ¿Qué clase de entrevista utilizaría?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi492_4147" value="true"> Entrevista estructurada entre varios I.C. y varios expertos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi492_4148" value="true"> Entrevista estructurada entre varios I.C. y un experto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi492_4149" value="true"> Entrevista abierta entre varios I.C. y un experto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi492_4150" value="true"> Entrevista abierta entre un I.C. y un experto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Entrevista abierta entre varios I.C. y un experto (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Las anotaciones a mano o aclaraciones hechas en los márgenes de la documentación no son, por norma general, importantes a la hora de extraer el conocimiento..</strong>		&nbsp;Las anotaciones a mano o aclaraciones hechas en los márgenes de la documentación no son, por norma general, importantes a la hora de extraer el conocimiento.		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse496" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">¡Incorrecto! Es muy probable que una aclaración en un margen permita distinguir algún caso particular.</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse496" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">La adquisición de conocimiento... .</strong>		&nbsp;La adquisición de conocimiento... 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi508_4246" value="true"> es un paso concreto en la metodología de desarrollo de un SBC <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi508_4247" value="true"> se produce en paralelo a todas las etapas de construcción de un SBC <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi508_4248" value="true"> se realiza en un único paso antes de la conceptualización. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi508_4249" value="true"> se realiza gracias a unos métodos completamente automáticos de adquisición de conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>se produce en paralelo a todas las etapas de construcción de un SBC  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Seleccione la opcion correcta (respuesta única):.</strong>		&nbsp;Seleccione la opcion correcta (respuesta única):		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi530_4697" value="true"> La extracción de conocimiento se realiza entrevistando a un experto en el dominio del problema <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi530_4698" value="true"> En la educción de conocimiento, este proviene de una persona <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi530_4699" value="true"> En la educcion de conocimiento, este proviene de una persona que nos lo proporciona de forma escrita<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En la educción de conocimiento, este proviene de una persona  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿Qué suelen ser las fuentes más importantes de conocimiento para la adquisición de conocimiento?.</strong>		&nbsp;¿Qué suelen ser las fuentes más importantes de conocimiento para la adquisición de conocimiento?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi551_4759" value="true"> clientes <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi551_4760" value="true"> usuarios <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi551_4761" value="true"> expertos <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi551_4762" value="true"> directivos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>usuarios  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>expertos  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>directivos (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Árboles de decisión.</strong>		&nbsp;Si un árbol de decisión trabaja con variables discretas: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi630_7078" value="true"> La tarea que realiza es regresión.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi630_7079" value="true"> Su función es la de clasificar. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi630_7080" value="true"> Puede tanto clasificar como realizar una regresión.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Su función es la de clasificar.  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Empareje el tipo de dependencia con la característica que la define..</strong>		&nbsp;Empareje el tipo de dependencia con la característica que la define.		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Una dependencia es reversible si &nbsp;->&nbsp;		<select name="match748">
+<option value=" cuando se retracta el antecedente debe retractarse el consecuente" selected> cuando se retracta el antecedente debe retractarse el consecuente</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Una dependencia es irreversible si &nbsp;->&nbsp;		<select name="match748">
+<option value=" cuando se retracta el antecedente debe retractarse el consecuente" selected> cuando se retracta el antecedente debe retractarse el consecuente</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una dependencia es reversible si  ->  cuando se retracta el antecedente debe retractarse el consecuente </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una dependencia es irreversible si  ->  al retractar el antecedente no puede retractarse el consecuente </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.5</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Marque las opciones correctas: El encadenamiento hacia adelante: .</strong>		&nbsp;Marque las opciones correctas: El encadenamiento hacia adelante: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi749_8585" value="true"> Es más específico que el encadenamiento hacia atrás.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi749_8586" value="true"> Suele solicitar al usuario la afirmación que no ha podido deducir.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi749_8587" value="true"> Utiliza sólo los datos disponibles.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi749_8588" value="true"> Es menos específico que el encadenamiento hacia atrás.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Es más específico que el encadenamiento hacia atrás. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Suele solicitar al usuario la afirmación que no ha podido deducir. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Utiliza sólo los datos disponibles. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Es menos específico que el encadenamiento hacia atrás. (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Señala la oración que consideres correcta:.</strong>		&nbsp;Señala la oración que consideres correcta:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi750_8486" value="true"> Un frame puede tener varios nombres.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi750_8487" value="true"> Un frame tiene una superclase o mas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi750_8488" value="true"> Los atributos ofrecen un medio de representar las propiedades de los objetos individuales. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Los atributos ofrecen un medio de representar las propiedades de los objetos individuales.  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">En los sistemas basados en reglas, ¿se puede sustituir una Base de Conocimiento por otra sin modificar el motor de inferencias? .</strong>		&nbsp;En los sistemas basados en reglas, ¿se puede sustituir una Base de Conocimiento por otra sin modificar el motor de inferencias? 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi751_8604" value="true"> Si, en todos los casos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi751_8605" value="true"> Si, solo es necesario que ambas Bases de Conocimiento tengan la misma sintaxi <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi751_8606" value="true"> No, en ningún caso<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si, en todos los casos (-100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si, solo es necesario que ambas Bases de Conocimiento tengan la misma sintaxi  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>No, en ningún caso (-100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Las estructuras vistas en clase para representar conocimiento son:.</strong>		&nbsp;Las estructuras vistas en clase para representar conocimiento son:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi755_8620" value="true"> Redes de inferencia<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi755_8621" value="true"> Reglas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi755_8622" value="true"> Frames<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi755_8623" value="true"> Patrones<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi755_8624" value="true"> Hechos<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi755_8625" value="true"> Redes semánticas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Redes de inferencia (-33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Reglas (34.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Frames (33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Patrones (-33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Hechos (-34.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Redes semánticas (33.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Modelos de Representación del Conocimiento.</strong>		&nbsp;¿Qué característica permite a las Redes Semánticas usar Lógica por Defecto?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi776_8363" value="true"> La herencia.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi776_8364" value="true"> Los conceptos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi776_8365" value="true"> Las excepciones.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi776_8366" value="true"> Las facetas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi776_8367" value="true"> Ninguna de las anteriores.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La herencia. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Modelos de Representación del Conocimiento.</strong>		&nbsp;Marque las casillas correctas. La Hipótesis de Mundo Cerrado...		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi777_8368" value="true"> Es muy usada en Sistemas Expertos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi777_8369" value="true"> Cuando no puede inferir algo responde que es desconocido.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi777_8370" value="true"> Útil cuando un SBC es complejo y con muchas variables.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi777_8371" value="true"> Es muy ineficiente para inferir.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi777_8372" value="true"> Todos los hechos que no son conocidos se consideran falsos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi777_8373" value="true"> Tiene la pega de que necesita realizar muchas preguntas al usuario para deducir algo que otros modelos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Es muy usada en Sistemas Expertos. (34.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Útil cuando un SBC es complejo y con muchas variables. (33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Todos los hechos que no son conocidos se consideran falsos. (33.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Modelos de Representación del Conocimiento.</strong>		&nbsp;Identifique las ventajas de las redes semánticas.		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi778_8669" value="true"> Representan el conocimiento de manera muy explícita.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi778_8670" value="true"> Requieren poco tiempo para inferir.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi778_8671" value="true"> Intuitivas para las personas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi778_8672" value="true"> Están regidas por las especificaciones de un estándar.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi778_8673" value="true"> No es posible obtener inferencias inválidas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi778_8674" value="true"> Es una herramienta muy potente para dominios complejos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Representan el conocimiento de manera muy explícita. (34.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Requieren poco tiempo para inferir. (33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Intuitivas para las personas. (33.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">No es posible establecer una equivalencia entre una red semántica y un frame:.</strong>		&nbsp;No es posible establecer una equivalencia entre una red semántica y un frame:		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse781" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Es posible establecer la equivalencia. Los nodos (conceptos) de las redes semánticas se corresponden con las clases, instancias y valores atributos de los frames. Por otra parte, los atributos de los frames se corresponden con los arcos(relaciones) de las redes semánticas.</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse781" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Las principales desventajas de los lenguajes basados en reglas son:.</strong>		&nbsp;Las principales desventajas de los lenguajes basados en reglas son:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi782_8520" value="true"> La ejecución del proceso de reconocimiento de patrones los vuelve ineficientes.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi782_8521" value="true"> Falta de naturalidad, las reglas no son una forma natural de expresar el conocimiento.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi782_8522" value="true"> Existe uan dificultad para cubrir todo el conocimiento (el número de reglas necesarias podría no ser manejable)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi782_8523" value="true"> No podemos predecir qué acciones ocurrirán cuando observamos una base de conocimiento. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La ejecución del proceso de reconocimiento de patrones los vuelve ineficientes. (34.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Falta de naturalidad, las reglas no son una forma natural de expresar el conocimiento. (-100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Existe uan dificultad para cubrir todo el conocimiento (el número de reglas necesarias podría no ser manejable) (33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>No podemos predecir qué acciones ocurrirán cuando observamos una base de conocimiento.  (33.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Señale las afirmaciones correctas.</strong>		&nbsp;De las siguientes afirmaciones, señale las correctas:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi785_8445" value="true"> En un sistema basado en reglas, el Motor de inferencia recibe información de la Base de Datos, pero nunca puede enviar nueva información a la base de datos. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi785_8446" value="true"> En el caso de tener que representar la información de un dominio tan complejo como lo es el de las armaduras de combate empleadas en todos los países del mundo entre los siglos V y XV d.c., lo mejor es emplear una red semántica.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi785_8447" value="true"> En una taxonomía de frames se pueden dar sólo relaciones de instancia-de o subclase-de.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi785_8448" value="true"> Una base de datos puede cambiarse por otra con la misma sintaxis sin necesidad de alterar el motor de inferencia.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi785_8449" value="true"> Los tipos de acciones que pueden aparecer en el antecedente de un regla son Afirmar y Retractar.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En un sistema basado en reglas, el Motor de inferencia recibe información de la Base de Datos, pero nunca puede enviar nueva información a la base de datos.  (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En el caso de tener que representar la información de un dominio tan complejo como lo es el de las armaduras de combate empleadas en todos los países del mundo entre los siglos V y XV d.c., lo mejor es emplear una red semántica. (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En una taxonomía de frames se pueden dar sólo relaciones de instancia-de o subclase-de. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una base de datos puede cambiarse por otra con la misma sintaxis sin necesidad de alterar el motor de inferencia. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Los tipos de acciones que pueden aparecer en el antecedente de un regla son Afirmar y Retractar. (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Reglas.</strong>		&nbsp;¿Son las metarreglas un mecanismo de control del razonamiento?		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse793" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse793" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Representación del conocimiento.</strong>		&nbsp;Marque cuales son las ventajas de los sistemas LBR.		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi794_8184" value="true"> Eficiencia<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi794_8185" value="true"> Se observan las acciones que pueden ocurrir<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi794_8186" value="true"> Modularidad<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi794_8187" value="true"> Necesitan pocas reglas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi794_8188" value="true"> Se observa el proceso de razonamiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Eficiencia (-33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Se observan las acciones que pueden ocurrir (-34.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Modularidad (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Necesitan pocas reglas (-33.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Se observa el proceso de razonamiento (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Dependencia en reglas.</strong>		&nbsp;¿Cuál de las siguientes afirmaciones son ciertas?  		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi801_8536" value="true"> La dependencia reversible se usa cuando tenemos varios caminos hacia un consecuente y la irreversible la usaremos cuando sólo tenemos un camino hacia un consecuente.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi801_8537" value="true"> La dependencia irreversible se puede usar cuando hay pocos caminos hacia un mismo consecuente. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi801_8538" value="true"> Por lo general, todas las interfaces de creación de sistemas basados en reglas permiten que sea el diseñador el que fije esta dependencia. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La dependencia reversible se usa cuando tenemos varios caminos hacia un consecuente y la irreversible la usaremos cuando sólo tenemos un camino hacia un consecuente. (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La dependencia irreversible se puede usar cuando hay pocos caminos hacia un mismo consecuente.  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Por lo general, todas las interfaces de creación de sistemas basados en reglas permiten que sea el diseñador el que fije esta dependencia.  (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Los hechos estructurados tienen mayor control sobre los datos, pero precisan de una declaración previa..</strong>		&nbsp;Los hechos estructurados tienen mayor control sobre los datos, pero precisan de una declaración previa.		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse802" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse802" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Sistema basado en reglas.</strong>		&nbsp;Seleccione las afirmaciones correctas:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi811_8696" value="true"> Si los datos del sistema basado en reglas son univaluados, las contradicciones en los valores de las variables no serán un problema.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi811_8697" value="true"> Una base de conocimiento puede cambiarse con otra puesto que el motor de inferencias es independiente. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi811_8698" value="true"> Hablamos de dependencia reversible si al retractar un antecedente, también debe hacerlo el consecuente. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi811_8699" value="true"> El consecuente de una regla nos dice cuando se disparará.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si los datos del sistema basado en reglas son univaluados, las contradicciones en los valores de las variables no serán un problema. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una base de conocimiento puede cambiarse con otra puesto que el motor de inferencias es independiente.  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Hablamos de dependencia reversible si al retractar un antecedente, también debe hacerlo el consecuente.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>El consecuente de una regla nos dice cuando se disparará. (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Redes semánticas.</strong>		&nbsp;Seleccione las afirmaciones correctas: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi812_8396" value="true"> Si una instancia tiene conflicto entre propiedades (una propiedad heredada y otra propiedad propia) La heredada vence.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi812_8397" value="true"> Mediante la relación de subclase se heredan las propiedades de otros conceptos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi812_8398" value="true"> Las redes semánticas son el precursor de los frames.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi812_8399" value="true"> Existe relación entre la sintaxis de redes semánticas extendidas y forma clausal de la lógica siempre. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si una instancia tiene conflicto entre propiedades (una propiedad heredada y otra propiedad propia) La heredada vence. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Mediante la relación de subclase se heredan las propiedades de otros conceptos. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Las redes semánticas son el precursor de los frames. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Existe relación entre la sintaxis de redes semánticas extendidas y forma clausal de la lógica siempre.  (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Herencia.</strong>		&nbsp;Suponga que tengo la siguiente taxonomía de frames: .............................................................................................................................................................................................................................................................. CLASE:Armadura_Ligera|ES-SUBCLASE-DE=Armadura|resistencia_Flechas=(VALOR=poca) .............................................................................................................................................................................................................................................................; CLASE:ArmaduraEscamas|ES-SUBCLASE-DE=ArmaduraLigera|resistenciaFlechas=(DEFECTO=normal) .............................................................................................................................................................................................................................................................¿Cuál de los 2 tipos de herencia vistos habría que usar de forma que cualquier instancia de ArmaduraEscamas tenga, por lo general, una resistenciaFlechas normal?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi819_8700" value="true"> N-herencia.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi819_8701" value="true"> Z-herencia.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Z-herencia. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Algunos elementos que pueden aparecer en una regla (Respuesta simple):.</strong>		&nbsp;Algunos elementos que pueden aparecer en una regla (Respuesta simple):		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi823_8718" value="true"> Datos, teoremas, relaciones de comparación. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi823_8719" value="true"> Cláusulas, datos, hipótesis. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi823_8720" value="true"> Relaciones de pertenencia, relaciones de asignación, datos. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi823_8721" value="true"> Información y relaciones. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Cláusulas, datos, hipótesis.  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Para que una regla pueda ser ejecutada, ¿debe cumplirse su antecedente? (Respuesta simple).</strong>		&nbsp;Para que una regla pueda ser ejecutada, ¿debe cumplirse su antecedente? (Respuesta simple)		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi824_8378" value="true"> No es necesario, ya que las reglas son independientes unas a otras. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi824_8379" value="true"> Debe cumplirse, pero no necesariamente todas sus cláusulas. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi824_8380" value="true"> Si las cláusulas que forman la regla anterior no tienen variable, no es necesario. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi824_8381" value="true"> Ninguna de las anteriores es correcta. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ninguna de las anteriores es correcta.  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Marque de las siguientes opciones, aquellas que sean pasos del razonamiento difuso.</strong>		&nbsp;Marque de las siguientes opciones, aquellas que sean pasos del razonamiento difuso		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9664" value="true"> Asunción del mundo cerrado <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9665" value="true"> Difusión <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9666" value="true"> Calculo de predicados <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9667" value="true"> Inferencia <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9668" value="true"> Composición <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9669" value="true"> Agregación <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi882_9670" value="true"> Concisión<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Difusión  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Inferencia  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Composición  (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Concisión (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Seleccione la categoría correcta de cada opción.</strong>		&nbsp;Seleccione la categoría correcta de cada opción		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probabilidad &nbsp;->&nbsp;		<select name="match883">
+<option value=" Modelos Numéricos" selected> Modelos Numéricos</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lógicas Basadas en Modelos Mínimos &nbsp;->&nbsp;		<select name="match883">
+<option value=" Modelos Numéricos" selected> Modelos Numéricos</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lógica Difusa &nbsp;->&nbsp;		<select name="match883">
+<option value=" Modelos Numéricos" selected> Modelos Numéricos</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teoría de Dempster-Shaffer &nbsp;->&nbsp;		<select name="match883">
+<option value=" Modelos Numéricos" selected> Modelos Numéricos</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lógicas por Defecto &nbsp;->&nbsp;		<select name="match883">
+<option value=" Modelos Numéricos" selected> Modelos Numéricos</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Probabilidad  ->  Modelos Numéricos </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógicas Basadas en Modelos Mínimos  ->  Modelos Simbólicos </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógica Difusa  ->  Modelos Numéricos </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Teoría de Dempster-Shaffer  ->  Modelos Numéricos </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógicas por Defecto  ->  Modelos Simbólicos </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.6</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">La relación entre factor de certeza y grado de creencia es:.</strong>		&nbsp;La relación entre factor de certeza y grado de creencia es:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi885_9671" value="true"> FC(H|E): GC(E|H) - GC(¬E|H)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi885_9672" value="true"> FC(H|E): GC(¬H|E) - GC(¬H|E)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi885_9673" value="true"> FC(H|E): GC(¬H|E) - GC(H|E)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi885_9674" value="true"> Ninguna de las anteriores es cierta.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ninguna de las anteriores es cierta. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Lógica difusa.</strong>		&nbsp;Seleccione las afirmaciones correctas en el marco de la lógica difusa:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi887_10293" value="true"> A∧¬ A toma valor cero solo si A vale 1.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi887_10294" value="true"> Con A (igual) 0.8 y B (igual) 0.5 se evaluará A∨B  como 0.8. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi887_10295" value="true"> El razonamiento difuso se lleva a cabo mediante: 1 Difusión. 2 Inferencia. 3 Composición de consecuentes. 4 Concisión.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi887_10296" value="true"> Para la composición de consecuentes se suele utilizar el máximo y el mínimo de los consecuentes.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>A∧¬ A toma valor cero solo si A vale 1. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Con A (igual) 0.8 y B (igual) 0.5 se evaluará A∨B  como 0.8.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>El razonamiento difuso se lleva a cabo mediante: 1 Difusión. 2 Inferencia. 3 Composición de consecuentes. 4 Concisión. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Para la composición de consecuentes se suele utilizar el máximo y el mínimo de los consecuentes. (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Razonamiento con incertidumbre.</strong>		&nbsp;Seleccione las afirmaciones correctas: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi888_9685" value="true"> El objetivo es razonar sin tener todo el conocimiento, utilizando el conocimiento incompleto adquirido que se tiene de la mejor forma posible, tratándolo mediante la lógica de primer orden.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi888_9686" value="true"> En un principio se pensó que representar el conocimiento con números no era buena idea, puesto que los humanos no lo hacemos así. En la actualidad los métodos probabilísticos son comúnmente aceptados en el campo de la inteligencia artificial<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi888_9687" value="true"> La lógica de primer orden es exacta, completa y consistente. Esto hace que no sea apto para trabajar con incertidumbre, información (parcialmente) contradictoria y deducciones probabilísticas (Porcentaje de ser ciertas o falsas).<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>El objetivo es razonar sin tener todo el conocimiento, utilizando el conocimiento incompleto adquirido que se tiene de la mejor forma posible, tratándolo mediante la lógica de primer orden. (-100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En un principio se pensó que representar el conocimiento con números no era buena idea, puesto que los humanos no lo hacemos así. En la actualidad los métodos probabilísticos son comúnmente aceptados en el campo de la inteligencia artificial (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La lógica de primer orden es exacta, completa y consistente. Esto hace que no sea apto para trabajar con incertidumbre, información (parcialmente) contradictoria y deducciones probabilísticas (Porcentaje de ser ciertas o falsas). (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Incertidumbre.</strong>		&nbsp;Si alguien te dice: <i>"Los ornitorrincos son unos animales muy graciosos"</i>. Te está diciendo una:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi889_9692" value="true"> Afirmación precisa, veracidad precisa.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi889_9693" value="true"> Afirmación precisa, veracidad imprecisa.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi889_9694" value="true"> Afirmación imprecisa, veracidad precisa.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi889_9695" value="true"> Afirmación imprecisa, veracidad imprecisa.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Afirmación imprecisa, veracidad precisa. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Incertidumbre.</strong>		&nbsp;De las siguientes fórmulas, marque las que fueron originalmente propuestas por Zadeh (Nota: Se usa el símbolo ≡ en sustición del símbolo <i>"igual"</i>): 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9886" value="true"> V(A∧B)≡min(V(A), V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9887" value="true"> V(A∨B)≡max(V(A), V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9888" value="true"> V(¬A)≡1-V(A)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9889" value="true"> V(A→B)≡max(1-V(A), V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9890" value="true"> V(A∨B)≡min(V(A), V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9891" value="true"> V(A→B)≡min(1, 1-V(A)+V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9892" value="true"> V(A∧B)≡min(1, V(A)+V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi890_9893" value="true"> V(A→B)≡min(0, 1+V(A)-V(B)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>V(A∧B)≡min(V(A), V(B) (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>V(A∨B)≡max(V(A), V(B) (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>V(¬A)≡1-V(A) (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>V(A→B)≡min(1, 1-V(A)+V(B) (25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Incertidumbre.</strong>		&nbsp;La lógica difusa puede ser usada para aproximar cualquier función:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi891_9704" value="true"> Si.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi891_9705" value="true"> No.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi891_9706" value="true"> Se piensa que es posible pero aún no se ha demostrado.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi891_9707" value="true"> Este es un problema NP que no es posible resolver.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">En un mundo monótono, si tenemos una Base del Conocimiento, y asumimos una expresión:.</strong>		&nbsp;En un mundo monótono, si tenemos una Base del Conocimiento, y asumimos una expresión:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi906_9940" value="true"> Si ampliamos la Base del Conocimiento, la expresión puede no ser cierta.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi906_9941" value="true"> Si ampliamos la Base del Conocimiento, la expresión seguirá siendo válida.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi906_9942" value="true"> No es posible añadir nuevo conocimiento.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi906_9943" value="true"> Todas las respuestas anteriores son falsas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si ampliamos la Base del Conocimiento, la expresión seguirá siendo válida. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Razonamiento Difuso .</strong>		&nbsp;Indique cuáles son pasos a seguir en el proceso de razonamiento difuso basado en reglas: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi907_9948" value="true"> Factorización <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi907_9949" value="true"> Difusión<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi907_9950" value="true"> Combinación de consecuentes<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi907_9951" value="true"> Inferencia<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi907_9952" value="true"> Composición de consecuentes<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi907_9953" value="true"> Concisión <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Factorización  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Difusión (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Combinación de consecuentes (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Inferencia (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Composición de consecuentes (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Concisión  (25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Modelos de Representación de la Incertidumbre .</strong>		&nbsp;Empareje las ventajas asociadas a los modelos numéricos de representación de la incertidumbre. 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mycin &nbsp;->&nbsp;		<select name="match908">
+<option value=" El número de parámetros necesario es razonable" selected> El número de parámetros necesario es razonable</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lógica Difusa &nbsp;->&nbsp;		<select name="match908">
+<option value=" El número de parámetros necesario es razonable" selected> El número de parámetros necesario es razonable</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Probabilidad &nbsp;->&nbsp;		<select name="match908">
+<option value=" El número de parámetros necesario es razonable" selected> El número de parámetros necesario es razonable</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Mycin  ->  El número de parámetros necesario es razonable </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógica Difusa  ->  Forma de razonar con la vaguedad asociada al lenguaje natural </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Probabilidad  ->  Sistema formalmente probado y robusto  </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.33333334</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Reglas por defecto y asunción del mundo cerrado.</strong>		&nbsp;Si en un sistema de reglas para emular el comportamiento de un espadachín, se decide que si no se conoce si el arma está rota, es porque no lo está, estamos aplicando:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi914_10335" value="true"> Lógica por defecto. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi914_10336" value="true"> Asunción del mundo cerrado. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Asunción del mundo cerrado.  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Agrupa.</strong>		&nbsp;Indica el campo al que pertenece cada ejemplo:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La velocidad máxima es 100 &nbsp;->&nbsp;		<select name="match915">
+<option value=" Lógica" selected> Lógica</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La velocidad actual es 90 con un 0,9 de posibilidad &nbsp;->&nbsp;		<select name="match915">
+<option value=" Lógica" selected> Lógica</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La velocidad actual es muy alta &nbsp;->&nbsp;		<select name="match915">
+<option value=" Lógica" selected> Lógica</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La velocidad actual es muy alta con un 0,9 de posibilidad &nbsp;->&nbsp;		<select name="match915">
+<option value=" Lógica" selected> Lógica</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La velocidad máxima es 100  ->  Lógica </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La velocidad actual es 90 con un 0,9 de posibilidad  ->  Probabilidad </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La velocidad actual es muy alta  ->  Lógica difusa </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La velocidad actual es muy alta con un 0,9 de posibilidad  ->  Probabilidad difusa </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.25</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Selecciona las correctas.</strong>		&nbsp;¿Cuáles de las siguientes afirmaciones son correctas?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi916_9990" value="true"> La lógica difusa no cumple en general la propiedad de no contradicción (V(A and not(A) es igual a 0) ni la de tercio excluso (V(A or not(A) es igual a 1)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi916_9991" value="true"> En la lógica difusa, la proposición “La velocidad de coche es muy alta” es verdad si la velocidad es mayor a un umbral (por ejemplo 100)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi916_9992" value="true"> En los factores de certeza: GC(H|E) + GC(not(H)|E) es igual a 1<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi916_9993" value="true"> Actualmente, si queremos emplear probabilidad en un sistema no usaremos la regla de bayes pura, sino que emplearemos naive bayes o redes bayesianas ya que de otro modo no sería viable computacionalmente<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La lógica difusa no cumple en general la propiedad de no contradicción (V(A and not(A) es igual a 0) ni la de tercio excluso (V(A or not(A) es igual a 1) (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En la lógica difusa, la proposición “La velocidad de coche es muy alta” es verdad si la velocidad es mayor a un umbral (por ejemplo 100) (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>En los factores de certeza: GC(H|E) + GC(not(H)|E) es igual a 1 (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Actualmente, si queremos emplear probabilidad en un sistema no usaremos la regla de bayes pura, sino que emplearemos naive bayes o redes bayesianas ya que de otro modo no sería viable computacionalmente (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">La idea básica de la lógica difusa es usar factores de certeza .</strong>		&nbsp;La idea básica de la lógica difusa es usar factores de certeza 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse923" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Los factores de certeza se usaban en el sistema MYCIN y no se utilizan a día de hoy.</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse923" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">¿En que modelo se representa las dependencias de las variables mediante un grafo?:___________..</strong>		&nbsp;¿En que modelo se representa las dependencias de las variables mediante un grafo?: ____________ .		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi930_10156" value="true"> Lógica difusa<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi930_10157" value="true"> Lógica primer orden<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi930_10158" value="true"> Redes Bayesianas<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi930_10159" value="true"> Lógica por defecto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi930_10160" value="true"> Redes Neuronales<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi930_10161" value="true"> Árboles de Decisión<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógica difusa (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógica primer orden (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Redes Bayesianas (100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Lógica por defecto (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Redes Neuronales (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Árboles de Decisión (-25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">La lógica difusa es más apropiada que la lógica clásica para expresar argumentos con incertidumbre..</strong>		&nbsp;La lógica difusa es más apropiada que la lógica clásica para expresar argumentos con incertidumbre.		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi931_10154" value="true"> Verdadero<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi931_10155" value="true"> Falso<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Verdadero (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Los factores de certerza utilizados en Mycin no producen incoherencias.</strong>		&nbsp;Los factores de certerza utilizados en Mycin no producen incoherencias		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse933" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Incorrecto. Como se ve en la transparencia 18 del tema, pueden producir grandes incoherencias.</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse933" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">La principal ventaja de la lógica difusa es:.</strong>		&nbsp;La principal ventaja de la lógica difusa es:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi935_10342" value="true"> El número de parámetros necesario es razonable.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi935_10343" value="true"> Proporciona una forma de razonar con la vaguedad asociada al lenguaje natural.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi935_10344" value="true"> Es un sistema formalmente probado y robusto<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Proporciona una forma de razonar con la vaguedad asociada al lenguaje natural. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">En la lógica de primer orden asumimos que el conocimiento es:.</strong>		&nbsp;En la lógica de primer orden asumimos que el conocimiento es:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi936_10186" value="true"> Exacto: Los hechos son ciertos o falsos <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi936_10187" value="true"> Incompleto: Puede haber cosas del campo de trabajo que se desconozcan.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi936_10188" value="true"> Consistente: No tiene contradicciones.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Exacto: Los hechos son ciertos o falsos  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Incompleto: Puede haber cosas del campo de trabajo que se desconozcan. (-100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Consistente: No tiene contradicciones. (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Ontología.</strong>		&nbsp;Seleccione las afirmaciones que sean correctas:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi979_11349" value="true"> Una ontología está formada entre otros por: axiomas, conceptos, propiedades y cardinalidad<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi979_11350" value="true"> Un error común es tratar de hacer una ontología que abarque demasiado, hay con concentrarse en el campo que queremos trabajar <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi979_11351" value="true"> Las ontologías pueden clasificarse en: genéricas, de dominio, orientadas a tareas y jerárquicas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La respuesta correcta es: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Un error común es tratar de hacer una ontología que abarque demasiado, hay con concentrarse en el campo que queremos trabajar  (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Constructores OWL.</strong>		&nbsp;Cuál de los siguientes constructores poseen descripciones correctas:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi980_11352" value="true"> Mamífero∩pico∩aletas Define la clase formada por la unión de la clase de los mamíferos, la clase de los animales con pico, y la clase de los animales con aletas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi980_11353" value="true"> ∀ ornitorrinco.Macho Define la clase de todos los individuos tales que tienen un ornitorrinco macho.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi980_11354" value="true"> ∃ ornitorrinco.Hembra Define la clase de todos los individuos tales que tienen al menos un ornitorrinco hembra.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Mamífero∩pico∩aletas Define la clase formada por la unión de la clase de los mamíferos, la clase de los animales con pico, y la clase de los animales con aletas. (-100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>∀ ornitorrinco.Macho Define la clase de todos los individuos tales que tienen un ornitorrinco macho. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>∃ ornitorrinco.Hembra Define la clase de todos los individuos tales que tienen al menos un ornitorrinco hembra. (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">OWL.</strong>		&nbsp;El estándar OWL permite expresar relaciones entre clases, expresar y restringir clases (rango y dominio) y restringir propiedades, como por ejemplo la cardinalidad. 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse981" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse981" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Sistema experto.</strong>		&nbsp;Los principales problemas en un sistema experto son: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi982_11339" value="true"> Mala programación en la base de conocimiento.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi982_11340" value="true"> Errores en el conocimiento por parte del experto (incorrecto o incompleto) <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi982_11341" value="true"> Fallo por parte del ingeniero del conocimiento en la obtención del conocimiento (o de una mala comunicación entre ambos)<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi982_11342" value="true"> Fallos de programación e incongruencias lógicas en el motor de inferencia. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Mala programación en la base de conocimiento. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Errores en el conocimiento por parte del experto (incorrecto o incompleto)  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Fallo por parte del ingeniero del conocimiento en la obtención del conocimiento (o de una mala comunicación entre ambos) (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Fallos de programación e incongruencias lógicas en el motor de inferencia.  (25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Verificación.</strong>		&nbsp;Para verificar un SBC debemos analizar principalmente: completitud, consistencia, precisión y explicaciones de la toma de decisiones		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse984" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"> La explicación de la toma de decisiones es para obtener un SBC de calidad, no es un trabajo que entre en la verificación con tanta importancia, a pesar de ser muy relevante para el sistema.</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse984" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Validación y verificación.</strong>		&nbsp;Seleccione las afirmaciones correctas: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi985_11345" value="true"> Se debe verificar que el sistema sea completo, consistente y dominante.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi985_11346" value="true"> Uno de los principales errores que se dan en el desarrollo de un sistema experto viene dado por una obtención incompleta del conocimiento, ya sea porque el experto no posee el conocimiento necesario o por una mala extracción por parte del ingeniero de conocimiento. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi985_11347" value="true"> Todo buen sistema experto debe explicar las tomas de decisiones según los razonamientos que haría un experto en la materia y tener la capacidad de adquirir o modificar conocimiento.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi985_11348" value="true"> Un sistema experto tiene que poseer conclusiones simples, completas y congruentes para ser de calidad.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Se debe verificar que el sistema sea completo, consistente y dominante. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Uno de los principales errores que se dan en el desarrollo de un sistema experto viene dado por una obtención incompleta del conocimiento, ya sea porque el experto no posee el conocimiento necesario o por una mala extracción por parte del ingeniero de conocimiento.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Todo buen sistema experto debe explicar las tomas de decisiones según los razonamientos que haría un experto en la materia y tener la capacidad de adquirir o modificar conocimiento. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Un sistema experto tiene que poseer conclusiones simples, completas y congruentes para ser de calidad. (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Sobre el concepto de Ontología: (Multirespuesta) .</strong>		&nbsp;Sobre el concepto de Ontología: (Multirespuesta) 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi989_11627" value="true"> Parte de la metafísica que trata del ser en general y de sus propiedades trascendentales.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi989_11628" value="true"> Algo existe si puede ser representado, descripto, definido (formalmente) para ser interpretado por una máquina.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi989_11629" value="true"> Una especificación de una conceptualización… una descripción de los conceptos y relaciones que pueden existir para un agente o una comunidad de agentes.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi989_11630" value="true"> Una ontología es un catalogo de los tipos de cosas que, se asume, existen en un dominio de interés D desde la perspectiva de una persona, la cual usa un lenguaje L para hablar sobre D.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi989_11631" value="true"> Un ontología trata sobre la exacta descripción de las cosas y sus relaciones.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi989_11632" value="true"> Todas las anteriores son correctas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Parte de la metafísica que trata del ser en general y de sus propiedades trascendentales. (20.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Algo existe si puede ser representado, descripto, definido (formalmente) para ser interpretado por una máquina. (20.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una especificación de una conceptualización… una descripción de los conceptos y relaciones que pueden existir para un agente o una comunidad de agentes. (20.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una ontología es un catalogo de los tipos de cosas que, se asume, existen en un dominio de interés D desde la perspectiva de una persona, la cual usa un lenguaje L para hablar sobre D. (20.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Un ontología trata sobre la exacta descripción de las cosas y sus relaciones. (20.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Todas las anteriores son correctas. (100.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Ontologías.</strong>		&nbsp;Marque las correctas acerca de los constructores		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1017_11683" value="true"> ∀P.C significa: la clase de todos los individuos para los que todos los valores de la propiedad P están en C.(incluyendo los que no tienen ningún valor de la propiedad P <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1017_11684" value="true"> ∀P.C significa: la clase de todos los individuos que tienen algún valor para la propiedad P, y todos los valores de la propiedad P están en C.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1017_11685" value="true"> ∃P.C significa: la clase de todos los individuos que tienen al menos un valor de la propiedad P en la clase C (incluyendo los individuos que no tienen ningún valor de la propiedad P).<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1017_11686" value="true"> ∃P.C significa: la clase de todos los individuos que tienen al menos un valor propiedad P en la clase C.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>∀P.C significa: la clase de todos los individuos para los que todos los valores de la propiedad P están en C.(incluyendo los que no tienen ningún valor de la propiedad P  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>∀P.C significa: la clase de todos los individuos que tienen algún valor para la propiedad P, y todos los valores de la propiedad P están en C. (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>∃P.C significa: la clase de todos los individuos que tienen al menos un valor de la propiedad P en la clase C (incluyendo los individuos que no tienen ningún valor de la propiedad P). (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>∃P.C significa: la clase de todos los individuos que tienen al menos un valor propiedad P en la clase C. (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Sobre ontologías en general.</strong>		&nbsp;¿Cual de las siguientes afirmaciones son ciertas? 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1027_11608" value="true"> El ser humano sólo usa conocimiento  que le es inherente, es decir, sólo el que recibe o se le da. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1027_11609" value="true"> La web semántica "entiende" conceptos basándose en lenguaje natural, entre otros. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1027_11610" value="true"> Las propiedades en OWL son funciones y por tanto no puede haber ningún elemento del dominio que no se relacione con otro. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1027_11611" value="true"> Una de las ventajas más importantes de las ontologías es que pueden usarse indistintamente por una máquina o un humano, ya que ambos la entienden.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>El ser humano sólo usa conocimiento  que le es inherente, es decir, sólo el que recibe o se le da.  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La web semántica "entiende" conceptos basándose en lenguaje natural, entre otros.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Las propiedades en OWL son funciones y por tanto no puede haber ningún elemento del dominio que no se relacione con otro.  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una de las ventajas más importantes de las ontologías es que pueden usarse indistintamente por una máquina o un humano, ya que ambos la entienden. (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Enlace.</strong>		&nbsp;Enlaza cada afirmación con la clase de ontología a la que pertenece:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontologías genéricas &nbsp;->&nbsp;		<select name="match1044">
+<option value=" Se suelen reutilizar" selected> Se suelen reutilizar</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontologías de dominio &nbsp;->&nbsp;		<select name="match1044">
+<option value=" Se suelen reutilizar" selected> Se suelen reutilizar</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontologías orientadas a tareas &nbsp;->&nbsp;		<select name="match1044">
+<option value=" Se suelen reutilizar" selected> Se suelen reutilizar</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontologías de aplicación &nbsp;->&nbsp;		<select name="match1044">
+<option value=" Se suelen reutilizar" selected> Se suelen reutilizar</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ontologías genéricas  ->  Se suelen reutilizar </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ontologías de dominio  ->  Incluyen el conocimiento específico de un dominio </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ontologías orientadas a tareas  ->  Generalización de Tareas </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ontologías de aplicación  ->  Combina, integra y extiende todas las sub-ontologías para una aplicación </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.25</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Afirmaciones.</strong>		&nbsp;Marque las afirmaciones correctas:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1045_11761" value="true"> OWL-full incluye solo sólo constructores decidibles de DL. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1045_11762" value="true"> Una ontología está compuesta por: Conceptos o clases, Instancias o individuos, Propiedades o relaciones y Axiomas. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1045_11763" value="true"> La ontología es “comprensible” para las máquinas pero no para los humanos. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1045_11764" value="true"> Una de las cosas que podemos razonar con razonadores de las ontologías es el chequeo de la consistencia. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1045_11765" value="true"> La propiedad de que la clase “Mago” tiene “Edad” es una propiedad de tipo objeto. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>OWL-full incluye solo sólo constructores decidibles de DL.  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una ontología está compuesta por: Conceptos o clases, Instancias o individuos, Propiedades o relaciones y Axiomas.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La ontología es “comprensible” para las máquinas pero no para los humanos.  (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Una de las cosas que podemos razonar con razonadores de las ontologías es el chequeo de la consistencia.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La propiedad de que la clase “Mago” tiene “Edad” es una propiedad de tipo objeto.  (-25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Asocie.</strong>		&nbsp;Asocie los conceptos:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrador del sistema &nbsp;->&nbsp;		<select name="match1046">
+<option value=" Mecanismos de razonamiento utilizados para modificar conocimientos anteriores." selected> Mecanismos de razonamiento utilizados para modificar conocimientos anteriores.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inconsistencia Semántica &nbsp;->&nbsp;		<select name="match1046">
+<option value=" Mecanismos de razonamiento utilizados para modificar conocimientos anteriores." selected> Mecanismos de razonamiento utilizados para modificar conocimientos anteriores.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validación &nbsp;->&nbsp;		<select name="match1046">
+<option value=" Mecanismos de razonamiento utilizados para modificar conocimientos anteriores." selected> Mecanismos de razonamiento utilizados para modificar conocimientos anteriores.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Verificación &nbsp;->&nbsp;		<select name="match1046">
+<option value=" Mecanismos de razonamiento utilizados para modificar conocimientos anteriores." selected> Mecanismos de razonamiento utilizados para modificar conocimientos anteriores.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Integrador del sistema  ->  Mecanismos de razonamiento utilizados para modificar conocimientos anteriores. </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Inconsistencia Semántica  ->  Las variables toman valores no válidos o ilegales. </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Validación  ->  Comprobar si el sistema satisface las necesidades de los usuarios.  </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Verificación  ->  Comprobación de la corrección del SBC (Descubrimiento y corrección de los errores). </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.25</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Afirmaciones.</strong>		&nbsp;Seleccione las afirmaciones correctas:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1047_11766" value="true"> La única validación válida es aquella que se basa en especificaciones formales <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1047_11767" value="true"> Un error común en los SBC es que el ingeniero del conocimiento haya malentendido al experto y, por tanto, el conocimiento introducido en el sistema sea incorrecto. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1047_11768" value="true"> Durante la verificación, debemos de buscar y eliminar cualquier tipo de incertidumbre y subjetividad del sistema, ya que estas son fuentes de mal comportamiento. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1047_11769" value="true"> El criterio de verificación del SBC basado en la completitud busca comprobar si en algún momento el SBC alcanza un estado de contradicción respecto al mundo modelizado. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1047_11770" value="true"> Si tengo 2 reglas del tipo (SoyMago) and (TengoMana) entonces (UsoBolaDeFuego) y (UsoBolaDeFuego) entonces (SoyMago) and (TengoMana), mi sistema tiene una inconsistencia estructural <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>La única validación válida es aquella que se basa en especificaciones formales  (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Un error común en los SBC es que el ingeniero del conocimiento haya malentendido al experto y, por tanto, el conocimiento introducido en el sistema sea incorrecto.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Durante la verificación, debemos de buscar y eliminar cualquier tipo de incertidumbre y subjetividad del sistema, ya que estas son fuentes de mal comportamiento.  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>El criterio de verificación del SBC basado en la completitud busca comprobar si en algún momento el SBC alcanza un estado de contradicción respecto al mundo modelizado.  (-25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Si tengo 2 reglas del tipo (SoyMago) and (TengoMana) entonces (UsoBolaDeFuego) y (UsoBolaDeFuego) entonces (SoyMago) and (TengoMana), mi sistema tiene una inconsistencia estructural  (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Validación y Verificación.</strong>		&nbsp;Además de permitir que los usuarios interactúen de forma fácil con el sistema, ¿qué capacidades debe reunir un Sistema Experto para que sea una herramienta efectiva? 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1051_11755" value="true"> Explicación de los razonamientos <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1051_11756" value="true"> Depuración de errores <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1051_11757" value="true"> Modificación de los conocimientos <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1051_11758" value="true"> Ejecución de los casos de prueba <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Explicación de los razonamientos  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Depuración de errores  (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Modificación de los conocimientos  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ejecución de los casos de prueba  (-50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Validación y Verificación.</strong>		&nbsp;En la verificación de sistemas en Ingeniería del Conocimiento se permite incertidumbre, a diferencia de la verificación en Ingeniería del Software. 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1052" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1052" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Empareje cada componente de las ontologías con su definición..</strong>		&nbsp;Empareje cada componente de las ontologías con su definición.		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Conceptos&nbsp;->&nbsp;		<select name="match1058">
+<option value="Ideas básicas que se intentan formalizar." selected>Ideas básicas que se intentan formalizar.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift" style="margin-left: 25px;">La respuesta es Correcta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Relaciones&nbsp;->&nbsp;		<select name="match1058">
+<option value="Ideas básicas que se intentan formalizar." selected>Ideas básicas que se intentan formalizar.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Funciones&nbsp;->&nbsp;		<select name="match1058">
+<option value="Ideas básicas que se intentan formalizar." selected>Ideas básicas que se intentan formalizar.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instancias&nbsp;->&nbsp;		<select name="match1058">
+<option value="Ideas básicas que se intentan formalizar." selected>Ideas básicas que se intentan formalizar.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Axiomas&nbsp;->&nbsp;		<select name="match1058">
+<option value="Ideas básicas que se intentan formalizar." selected>Ideas básicas que se intentan formalizar.</option>
+		</select>		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift" style="margin-left: 25px;">La respuesta es Incorrecta!</div>
+		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas correctas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Conceptos -> Ideas básicas que se intentan formalizar. </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Relaciones -> Enlace entre conceptos del dominio. </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Funciones -> Tipo concreto de relación. </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Instancias -> Representan objetos determinados de un concepto. </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Axiomas -> Teoremas sobre las relaciones que deben cumplir los elementos de la ontología. </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.2</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Clases de Ontologías.</strong>		&nbsp;¿Cuáles de las siguientes son clases de Ontologías?		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1078_12026" value="true"> De aplicación: Conocimiento específicos de una tarea. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1078_12027" value="true"> Negativas: Conceptos que se evaluan como falsos en un dominio. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1078_12028" value="true"> De dominio: Conocimiento específico de un dominio. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1078_12029" value="true"> De definición: Definen exaustivamente un concepto. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1078_12030" value="true"> Genéricas: Definen conceptos comunes  y generales. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1078_12031" value="true"> Orientadas a tareas: Conceptos comunes de bajo nivel. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>De dominio: Conocimiento específico de un dominio.  (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Genéricas: Definen conceptos comunes  y generales.  (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Las ontologías: (Respuesta múltiple).</strong>		&nbsp;Las ontologías: (Respuesta múltiple)		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1081_12050" value="true"> Generan información comprensible para humanos y ordenadores. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1081_12051" value="true"> Son un método de clasificación automática. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1081_12052" value="true"> Ayudan a la comprensión común. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1081_12053" value="true"> Permiten la deducción de conocimiento a través de métodos automáticos. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Generan información comprensible para humanos y ordenadores.  (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Son un método de clasificación automática.  (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Ayudan a la comprensión común.  (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Permiten la deducción de conocimiento a través de métodos automáticos.  (25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">En la Ingeniería de Conocimiento y la Ingeniería del Software, la validación y la verificación son procesos idénticos .</strong>		&nbsp;En la Ingeniería de Conocimiento y la Ingeniería del Software, la validación y la verificación son procesos idénticos 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1095" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Incorrecto. (Diapositiva 7)</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1095" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Señale cuales de los siguientes criterios debemos verificar en un SBC:.</strong>		&nbsp;Señale cuales de los siguientes criterios debemos verificar en un SBC:		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1096_12185" value="true"> Consistencia: Se comprueba si se alcanza un estado en conflicto con el mundo modelizado.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1096_12186" value="true"> Incompletitud: Se permiten lagunas en la capacidad deductiva. <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1096_12187" value="true"> Precisión: La sintaxis es correcta y no hay errores morfológicos.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Consistencia: Se comprueba si se alcanza un estado en conflicto con el mundo modelizado. (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Incompletitud: Se permiten lagunas en la capacidad deductiva.  (-100.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Precisión: La sintaxis es correcta y no hay errores morfológicos. (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Las ontologías no se deben utilizar para la especificación formal de requerimientos .</strong>		&nbsp;Las ontologías no se deben utilizar para la especificación formal de requerimientos 		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1097" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">De hecho, es uno de los campos de aplicación de las ontologías</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1097" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">En una ontología, definimos los axiomas como relaciones entre los conceptos.</strong>		&nbsp;En una ontología, definimos los axiomas como relaciones entre los conceptos		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1098" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift">Las relaciones entre los conceptos las especifican las propiedades. Los axiomas son restricciones y meta-información que definimos sobre las relaciones.</strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1098" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Ontologías.</strong>		&nbsp;Indique cuáles de las siguientes afirmaciones sobre las ontologías son falsas: 		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1100_12147" value="true"> Permiten restringir la seguridad<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1100_12148" value="true"> Proveen conocimiento entendible por humanos y computadoras<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1100_12149" value="true"> Proveen acceso común al conocimiento<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1100_12150" value="true"> Crean incertidumbre <br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Permiten restringir la seguridad (50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Proveen conocimiento entendible por humanos y computadoras (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Proveen acceso común al conocimiento (-50.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Crean incertidumbre  (50.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">RDF es un formato para describir información y conceptos representados mediante tripletas que combinan recursos, propiedades y valores.</strong>		&nbsp;RDF es un formato para describir información y conceptos representados mediante tripletas que combinan recursos, propiedades y valores		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1107" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1107" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="aciertoGift">La respuesta es Correcta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 1.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Características de un Sistema Experto de calidad: (Respuesta múltiple).</strong>		&nbsp;Características de un Sistema Experto de calidad: (Respuesta múltiple)		<br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12071" value="true"> Escalabilidad.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12072" value="true"> Conclusiones transigentes.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12073" value="true"> Base de conocimiento verificada.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12074" value="true"> Cuenta con mecanismos de seguridad.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12075" value="true"> Presentación agradable y con colores.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12076" value="true"> Conclusiones correctas.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12077" value="true"> Uso frecuente.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="multi1108_12078" value="true"> Conclusiones congruentes.<br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las respuestas son: <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Base de conocimiento verificada. (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Cuenta con mecanismos de seguridad. (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Conclusiones correctas. (25.0 %) </strong> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <strong>Conclusiones congruentes. (25.0 %) </strong> <br/>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>	<div class="respuestasGift">		&nbsp;&nbsp;&nbsp;&nbsp;<strong class="tituloGift">Que se cometan fallos en el proceso de validación y verificación no tiene una importancia trascendental, ya que ello no impide el correcto funcionamiento del sistema..</strong>		&nbsp;Que se cometan fallos en el proceso de validación y verificación no tiene una importancia trascendental, ya que ello no impide el correcto funcionamiento del sistema.		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1109" value="Verdadero" checked> Verdadero &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong class="feedbackGift"></strong><br>		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="trueFalse1109" value="Falso"> Falso		&nbsp;&nbsp;&nbsp;&nbsp;<div class="falloGift">La respuesta es Incorrecta!</div>		<br/>		&nbsp;&nbsp;&nbsp;&nbsp;<strong>Puntuación: 0.0</strong>		<br/>	</div>	<br/>
+		</div>
+				
+ 	</div>
+ 	
+</body>
+</html>
+                </td>
+            </tr>
+            <tr>
+                <td height="30" colspan="2" style="text-align: right; border: 0 none;">
+                    <div class="autorFooter" align="right" style="text-align: right;">
+	&copy; Manuel Romero Cantal&nbsp;&nbsp;&nbsp;
+	<br/>
+	sgac.ugr@gmail.com&nbsp;&nbsp;&nbsp;
+	<br/>
+	Departamento de Ciencias de la Computación e Inteligencia Artificial - ETSIIT - Universidad de Granada&nbsp;&nbsp;&nbsp;
+</div>
+
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
