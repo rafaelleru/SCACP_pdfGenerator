@@ -1,0 +1,420 @@
+Sistema Colaborativo de Aprendizaje basado en Cuestionarios y Actividades
+Ingeniería del Conocimiento: Curso 2016
+LEYVA RUIZ, RAFAEL
+SU PUNTUACIÓN ES
+ SOBRE 
+PUNTOS POSIBLES.
+PORCENTAJE DE ACIERTO:
+Ha fallado cuestiones sobre los siguientes conceptos de la asignatura:
+NOMBRE:
+Los algoritmos de inferencia:.
+Son independientes del problema pero dependientes del modelo formal del conocimiento usado para solucionar el problema. (100.0 %) 
+
+Los sistemas basados en conocimiento son la mejor alternativa para todos los problemas.___________ .
+
+¿De qué son dependientes los algoritmos de inferencia?.
+Del formalismo de representación del conocimiento (100.0 %) 
+
+Problemas en los que usar SBC.
+Analizador sintáctico de código en c. (100.0 %) 
+
+Un Sistema Basado en Conocimiento es capaz de resolver problemas con información incompleta..
+
+MYCIN fue el primer Sistema Basado en Conocimiento..
+
+Los SBCs almacenan la representación explícita del conocimiento, pero no hacen uso de él..
+
+Indica qué afirmación es verdadera:.
+El desarrollador de un SBC no se encarga de extraer el conocimiento (100.0 %) 
+
+¿Cuál de las siguientes no es una característica de un SBC?.
+Compensa errores que se puedan producir en la introducción del conocimiento (100.0 %) 
+
+La tarea de validación de un SBC la realiza:.
+Los expertos.  (100.0 %) 
+
+Los algoritmos de inferencia son: Altamente independiente del problema y dependientes del formalismo de representacion del conocimiento.
+
+Un Sistema Basado en Conocimiento.
+representa el conocimiento y razona separadamente  (100.0 %) 
+
+¿Cuál suele ser la fase más compleja en la construcción de un sistema experto?: .
+Adquirir conocimiento (100.0 %) 
+
+Solamente se debe extraer información de un único Experto para evitar contradicciones .
+
+El motor de inferencia es independiente del problema y del formalismo de representación del conocimiento. .
+
+Durante el desarrollo de un SBC el ingeniero de conocimiento se encarga de:.
+Extraer el conocimiento necesario de los expertos (100.0 %) 
+
+¿Cuál de las siguientes no es una etapa del ciclo de vida  para el desarrollo de un SBC?.
+Ninguna de las anteriores es correcta (100.0 %) 
+
+Un Sistema Experto.
+ha de justificar su solución obtenida (100.0 %) 
+
+El motor de Inferencia depende de.
+el formalismo de representación pero no del problema (100.0 %) 
+
+Empareja las palabras con las que son asociadas..
+Folksonomía  ->  etiquetado 
+Taxonomía  ->  clasificación 
+Tesauros  ->  terminología 
+Ontología  ->  red semántica 
+5
+¿Con qué se suele asociar una taxonomía más?.
+una categorización (100.0 %) 
+
+¿Qué herramienta suele tener la complejidad más grande?.
+Tesauro  (100.0 %) 
+
+DENDRAL 1965 .
+identifica estructuras moléculas orgánicas  (100.0 %) 
+
+Un problema no adecuado para SBC seria .
+un problema donde no se dispone de fuentes de conocimiento  (100.0 %) 
+un problema que  puede ser resueltos aplicando algorítmos clásicos o la investigación operativa (100.0 %) 
+
+El motor de inferencia es ___________..
+altamente independiente del problema, pero dependiente del formalismo de representación del conocimiento  (100.0 %) 
+
+Marcar entre las siguientes las afirmaciones correctas sobre el ciclo de vida para el desarrollo de un SBC .
+Todas las fases son importantes en sí  (100.0 %) 
+la fase mas compleja es la adquisición del conocimiento (100.0 %) 
+
+Enumerar las fases en el ciclo de educcion de conocimiento. .
+Transcripcion  ->  3 
+Evaluacion  ->  5 
+Preparacion  ->  1 
+Sesion  ->  2 
+Analisis  ->  4 
+
+Adquisición de Conocimiento.
+De 1 a 3 horas (100.0 %) 
+
+Adquisición de Conocimiento.
+Entrevista abierta entre varios I.C. y un experto (100.0 %) 
+
+Las anotaciones a mano o aclaraciones hechas en los márgenes de la documentación no son, por norma general, importantes a la hora de extraer el conocimiento..
+
+La adquisición de conocimiento... .
+se produce en paralelo a todas las etapas de construcción de un SBC  (100.0 %) 
+
+Seleccione la opcion correcta (respuesta única):.
+En la educción de conocimiento, este proviene de una persona  (100.0 %) 
+
+¿Qué suelen ser las fuentes más importantes de conocimiento para la adquisición de conocimiento?.
+usuarios  (100.0 %) 
+expertos  (100.0 %) 
+directivos (100.0 %) 
+
+Árboles de decisión.
+Su función es la de clasificar.  (100.0 %) 
+
+Empareje el tipo de dependencia con la característica que la define..
+Una dependencia es reversible si  ->  cuando se retracta el antecedente debe retractarse el consecuente 
+Una dependencia es irreversible si  ->  al retractar el antecedente no puede retractarse el consecuente 
+
+Marque las opciones correctas: El encadenamiento hacia adelante: .
+Es más específico que el encadenamiento hacia atrás. (-50.0 %) 
+Suele solicitar al usuario la afirmación que no ha podido deducir. (-50.0 %) 
+Utiliza sólo los datos disponibles. (50.0 %) 
+Es menos específico que el encadenamiento hacia atrás. (50.0 %) 
+
+Señala la oración que consideres correcta:.
+Los atributos ofrecen un medio de representar las propiedades de los objetos individuales.  (100.0 %) 
+
+En los sistemas basados en reglas, ¿se puede sustituir una Base de Conocimiento por otra sin modificar el motor de inferencias? .
+Si, en todos los casos (-100.0 %) 
+Si, solo es necesario que ambas Bases de Conocimiento tengan la misma sintaxi  (100.0 %) 
+No, en ningún caso (-100.0 %) 
+
+Las estructuras vistas en clase para representar conocimiento son:.
+Redes de inferencia (-33.0 %) 
+Reglas (34.0 %) 
+Frames (33.0 %) 
+Patrones (-33.0 %) 
+Hechos (-34.0 %) 
+Redes semánticas (33.0 %) 
+
+Modelos de Representación del Conocimiento.
+La herencia. (100.0 %) 
+
+Modelos de Representación del Conocimiento.
+Es muy usada en Sistemas Expertos. (34.0 %) 
+Útil cuando un SBC es complejo y con muchas variables. (33.0 %) 
+Todos los hechos que no son conocidos se consideran falsos. (33.0 %) 
+
+Modelos de Representación del Conocimiento.
+Representan el conocimiento de manera muy explícita. (34.0 %) 
+Requieren poco tiempo para inferir. (33.0 %) 
+Intuitivas para las personas. (33.0 %) 
+
+No es posible establecer una equivalencia entre una red semántica y un frame:.
+
+Las principales desventajas de los lenguajes basados en reglas son:.
+La ejecución del proceso de reconocimiento de patrones los vuelve ineficientes. (34.0 %) 
+Falta de naturalidad, las reglas no son una forma natural de expresar el conocimiento. (-100.0 %) 
+Existe uan dificultad para cubrir todo el conocimiento (el número de reglas necesarias podría no ser manejable) (33.0 %) 
+No podemos predecir qué acciones ocurrirán cuando observamos una base de conocimiento.  (33.0 %) 
+
+Señale las afirmaciones correctas.
+En un sistema basado en reglas, el Motor de inferencia recibe información de la Base de Datos, pero nunca puede enviar nueva información a la base de datos.  (-25.0 %) 
+En el caso de tener que representar la información de un dominio tan complejo como lo es el de las armaduras de combate empleadas en todos los países del mundo entre los siglos V y XV d.c., lo mejor es emplear una red semántica. (-25.0 %) 
+En una taxonomía de frames se pueden dar sólo relaciones de instancia-de o subclase-de. (50.0 %) 
+Una base de datos puede cambiarse por otra con la misma sintaxis sin necesidad de alterar el motor de inferencia. (50.0 %) 
+Los tipos de acciones que pueden aparecer en el antecedente de un regla son Afirmar y Retractar. (-50.0 %) 
+
+Reglas.
+
+Representación del conocimiento.
+Eficiencia (-33.0 %) 
+Se observan las acciones que pueden ocurrir (-34.0 %) 
+Modularidad (50.0 %) 
+Necesitan pocas reglas (-33.0 %) 
+Se observa el proceso de razonamiento (50.0 %) 
+
+Dependencia en reglas.
+La dependencia reversible se usa cuando tenemos varios caminos hacia un consecuente y la irreversible la usaremos cuando sólo tenemos un camino hacia un consecuente. (100.0 %) 
+La dependencia irreversible se puede usar cuando hay pocos caminos hacia un mismo consecuente.  (-50.0 %) 
+Por lo general, todas las interfaces de creación de sistemas basados en reglas permiten que sea el diseñador el que fije esta dependencia.  (-50.0 %) 
+
+Los hechos estructurados tienen mayor control sobre los datos, pero precisan de una declaración previa..
+
+Sistema basado en reglas.
+Si los datos del sistema basado en reglas son univaluados, las contradicciones en los valores de las variables no serán un problema. (50.0 %) 
+Una base de conocimiento puede cambiarse con otra puesto que el motor de inferencias es independiente.  (-50.0 %) 
+Hablamos de dependencia reversible si al retractar un antecedente, también debe hacerlo el consecuente.  (50.0 %) 
+El consecuente de una regla nos dice cuando se disparará. (-50.0 %) 
+
+Redes semánticas.
+Si una instancia tiene conflicto entre propiedades (una propiedad heredada y otra propiedad propia) La heredada vence. (-50.0 %) 
+Mediante la relación de subclase se heredan las propiedades de otros conceptos. (50.0 %) 
+Las redes semánticas son el precursor de los frames. (50.0 %) 
+Existe relación entre la sintaxis de redes semánticas extendidas y forma clausal de la lógica siempre.  (-50.0 %) 
+
+Herencia.
+Z-herencia. (100.0 %) 
+
+Algunos elementos que pueden aparecer en una regla (Respuesta simple):.
+Cláusulas, datos, hipótesis.  (100.0 %) 
+
+Para que una regla pueda ser ejecutada, ¿debe cumplirse su antecedente? (Respuesta simple).
+Ninguna de las anteriores es correcta.  (100.0 %) 
+
+Marque de las siguientes opciones, aquellas que sean pasos del razonamiento difuso.
+Difusión  (100.0 %) 
+Inferencia  (100.0 %) 
+Composición  (100.0 %) 
+Concisión (100.0 %) 
+
+Seleccione la categoría correcta de cada opción.
+Probabilidad  ->  Modelos Numéricos 
+Lógicas Basadas en Modelos Mínimos  ->  Modelos Simbólicos 
+Lógica Difusa  ->  Modelos Numéricos 
+Teoría de Dempster-Shaffer  ->  Modelos Numéricos 
+Lógicas por Defecto  ->  Modelos Simbólicos 
+
+La relación entre factor de certeza y grado de creencia es:.
+Ninguna de las anteriores es cierta. (100.0 %) 
+
+Lógica difusa.
+A∧¬ A toma valor cero solo si A vale 1. (-50.0 %) 
+Con A (igual) 0.8 y B (igual) 0.5 se evaluará A∨B  como 0.8.  (50.0 %) 
+El razonamiento difuso se lleva a cabo mediante: 1 Difusión. 2 Inferencia. 3 Composición de consecuentes. 4 Concisión. (50.0 %) 
+Para la composición de consecuentes se suele utilizar el máximo y el mínimo de los consecuentes. (-50.0 %) 
+
+Razonamiento con incertidumbre.
+El objetivo es razonar sin tener todo el conocimiento, utilizando el conocimiento incompleto adquirido que se tiene de la mejor forma posible, tratándolo mediante la lógica de primer orden. (-100.0 %) 
+En un principio se pensó que representar el conocimiento con números no era buena idea, puesto que los humanos no lo hacemos así. En la actualidad los métodos probabilísticos son comúnmente aceptados en el campo de la inteligencia artificial (50.0 %) 
+La lógica de primer orden es exacta, completa y consistente. Esto hace que no sea apto para trabajar con incertidumbre, información (parcialmente) contradictoria y deducciones probabilísticas (Porcentaje de ser ciertas o falsas). (50.0 %) 
+
+Incertidumbre.
+Afirmación imprecisa, veracidad precisa. (100.0 %) 
+
+Incertidumbre.
+V(A∧B)≡min(V(A), V(B) (25.0 %) 
+V(A∨B)≡max(V(A), V(B) (25.0 %) 
+V(¬A)≡1-V(A) (25.0 %) 
+V(A→B)≡min(1, 1-V(A)+V(B) (25.0 %) 
+
+Incertidumbre.
+Si. (100.0 %) 
+
+En un mundo monótono, si tenemos una Base del Conocimiento, y asumimos una expresión:.
+Si ampliamos la Base del Conocimiento, la expresión seguirá siendo válida. (100.0 %) 
+
+Razonamiento Difuso .
+Factorización  (-50.0 %) 
+Difusión (25.0 %) 
+Combinación de consecuentes (-50.0 %) 
+Inferencia (25.0 %) 
+Composición de consecuentes (25.0 %) 
+Concisión  (25.0 %) 
+
+Modelos de Representación de la Incertidumbre .
+Mycin  ->  El número de parámetros necesario es razonable 
+Lógica Difusa  ->  Forma de razonar con la vaguedad asociada al lenguaje natural 
+Probabilidad  ->  Sistema formalmente probado y robusto  
+3333334
+Reglas por defecto y asunción del mundo cerrado.
+Asunción del mundo cerrado.  (100.0 %) 
+
+Agrupa.
+La velocidad máxima es 100  ->  Lógica 
+La velocidad actual es 90 con un 0,9 de posibilidad  ->  Probabilidad 
+La velocidad actual es muy alta  ->  Lógica difusa 
+La velocidad actual es muy alta con un 0,9 de posibilidad  ->  Probabilidad difusa 
+5
+Selecciona las correctas.
+La lógica difusa no cumple en general la propiedad de no contradicción (V(A and not(A) es igual a 0) ni la de tercio excluso (V(A or not(A) es igual a 1) (50.0 %) 
+En la lógica difusa, la proposición “La velocidad de coche es muy alta” es verdad si la velocidad es mayor a un umbral (por ejemplo 100) (-50.0 %) 
+En los factores de certeza: GC(H|E) + GC(not(H)|E) es igual a 1 (-50.0 %) 
+Actualmente, si queremos emplear probabilidad en un sistema no usaremos la regla de bayes pura, sino que emplearemos naive bayes o redes bayesianas ya que de otro modo no sería viable computacionalmente (50.0 %) 
+
+La idea básica de la lógica difusa es usar factores de certeza .
+
+¿En que modelo se representa las dependencias de las variables mediante un grafo?:___________..
+Lógica difusa (-25.0 %) 
+Lógica primer orden (-25.0 %) 
+Redes Bayesianas (100.0 %) 
+Lógica por defecto (-50.0 %) 
+Redes Neuronales (-25.0 %) 
+Árboles de Decisión (-25.0 %) 
+
+La lógica difusa es más apropiada que la lógica clásica para expresar argumentos con incertidumbre..
+Verdadero (100.0 %) 
+
+Los factores de certerza utilizados en Mycin no producen incoherencias.
+
+La principal ventaja de la lógica difusa es:.
+Proporciona una forma de razonar con la vaguedad asociada al lenguaje natural. (100.0 %) 
+
+En la lógica de primer orden asumimos que el conocimiento es:.
+Exacto: Los hechos son ciertos o falsos  (50.0 %) 
+Incompleto: Puede haber cosas del campo de trabajo que se desconozcan. (-100.0 %) 
+Consistente: No tiene contradicciones. (50.0 %) 
+
+Ontología.
+Un error común es tratar de hacer una ontología que abarque demasiado, hay con concentrarse en el campo que queremos trabajar  (100.0 %) 
+
+Constructores OWL.
+Mamífero∩pico∩aletas Define la clase formada por la unión de la clase de los mamíferos, la clase de los animales con pico, y la clase de los animales con aletas. (-100.0 %) 
+∀ ornitorrinco.Macho Define la clase de todos los individuos tales que tienen un ornitorrinco macho. (50.0 %) 
+∃ ornitorrinco.Hembra Define la clase de todos los individuos tales que tienen al menos un ornitorrinco hembra. (50.0 %) 
+
+OWL.
+
+Sistema experto.
+Mala programación en la base de conocimiento. (-50.0 %) 
+Errores en el conocimiento por parte del experto (incorrecto o incompleto)  (50.0 %) 
+Fallo por parte del ingeniero del conocimiento en la obtención del conocimiento (o de una mala comunicación entre ambos) (25.0 %) 
+Fallos de programación e incongruencias lógicas en el motor de inferencia.  (25.0 %) 
+
+Verificación.
+
+Validación y verificación.
+Se debe verificar que el sistema sea completo, consistente y dominante. (-50.0 %) 
+Uno de los principales errores que se dan en el desarrollo de un sistema experto viene dado por una obtención incompleta del conocimiento, ya sea porque el experto no posee el conocimiento necesario o por una mala extracción por parte del ingeniero de conocimiento.  (50.0 %) 
+Todo buen sistema experto debe explicar las tomas de decisiones según los razonamientos que haría un experto en la materia y tener la capacidad de adquirir o modificar conocimiento. (50.0 %) 
+Un sistema experto tiene que poseer conclusiones simples, completas y congruentes para ser de calidad. (-50.0 %) 
+
+Sobre el concepto de Ontología: (Multirespuesta) .
+Parte de la metafísica que trata del ser en general y de sus propiedades trascendentales. (20.0 %) 
+Algo existe si puede ser representado, descripto, definido (formalmente) para ser interpretado por una máquina. (20.0 %) 
+Una especificación de una conceptualización… una descripción de los conceptos y relaciones que pueden existir para un agente o una comunidad de agentes. (20.0 %) 
+Una ontología es un catalogo de los tipos de cosas que, se asume, existen en un dominio de interés D desde la perspectiva de una persona, la cual usa un lenguaje L para hablar sobre D. (20.0 %) 
+Un ontología trata sobre la exacta descripción de las cosas y sus relaciones. (20.0 %) 
+Todas las anteriores son correctas. (100.0 %) 
+
+Ontologías.
+∀P.C significa: la clase de todos los individuos para los que todos los valores de la propiedad P están en C.(incluyendo los que no tienen ningún valor de la propiedad P  (50.0 %) 
+∀P.C significa: la clase de todos los individuos que tienen algún valor para la propiedad P, y todos los valores de la propiedad P están en C. (-50.0 %) 
+∃P.C significa: la clase de todos los individuos que tienen al menos un valor de la propiedad P en la clase C (incluyendo los individuos que no tienen ningún valor de la propiedad P). (-50.0 %) 
+∃P.C significa: la clase de todos los individuos que tienen al menos un valor propiedad P en la clase C. (50.0 %) 
+
+Sobre ontologías en general.
+El ser humano sólo usa conocimiento  que le es inherente, es decir, sólo el que recibe o se le da.  (-50.0 %) 
+La web semántica "entiende" conceptos basándose en lenguaje natural, entre otros.  (50.0 %) 
+Las propiedades en OWL son funciones y por tanto no puede haber ningún elemento del dominio que no se relacione con otro.  (-50.0 %) 
+Una de las ventajas más importantes de las ontologías es que pueden usarse indistintamente por una máquina o un humano, ya que ambos la entienden. (50.0 %) 
+
+Enlace.
+Ontologías genéricas  ->  Se suelen reutilizar 
+Ontologías de dominio  ->  Incluyen el conocimiento específico de un dominio 
+Ontologías orientadas a tareas  ->  Generalización de Tareas 
+Ontologías de aplicación  ->  Combina, integra y extiende todas las sub-ontologías para una aplicación 
+5
+Afirmaciones.
+OWL-full incluye solo sólo constructores decidibles de DL.  (-50.0 %) 
+Una ontología está compuesta por: Conceptos o clases, Instancias o individuos, Propiedades o relaciones y Axiomas.  (50.0 %) 
+La ontología es “comprensible” para las máquinas pero no para los humanos.  (-25.0 %) 
+Una de las cosas que podemos razonar con razonadores de las ontologías es el chequeo de la consistencia.  (50.0 %) 
+La propiedad de que la clase “Mago” tiene “Edad” es una propiedad de tipo objeto.  (-25.0 %) 
+
+Asocie.
+Integrador del sistema  ->  Mecanismos de razonamiento utilizados para modificar conocimientos anteriores. 
+Inconsistencia Semántica  ->  Las variables toman valores no válidos o ilegales. 
+Validación  ->  Comprobar si el sistema satisface las necesidades de los usuarios.  
+Verificación  ->  Comprobación de la corrección del SBC (Descubrimiento y corrección de los errores). 
+5
+Afirmaciones.
+La única validación válida es aquella que se basa en especificaciones formales  (-25.0 %) 
+Un error común en los SBC es que el ingeniero del conocimiento haya malentendido al experto y, por tanto, el conocimiento introducido en el sistema sea incorrecto.  (50.0 %) 
+Durante la verificación, debemos de buscar y eliminar cualquier tipo de incertidumbre y subjetividad del sistema, ya que estas son fuentes de mal comportamiento.  (-50.0 %) 
+El criterio de verificación del SBC basado en la completitud busca comprobar si en algún momento el SBC alcanza un estado de contradicción respecto al mundo modelizado.  (-25.0 %) 
+Si tengo 2 reglas del tipo (SoyMago) and (TengoMana) entonces (UsoBolaDeFuego) y (UsoBolaDeFuego) entonces (SoyMago) and (TengoMana), mi sistema tiene una inconsistencia estructural  (50.0 %) 
+
+Validación y Verificación.
+Explicación de los razonamientos  (50.0 %) 
+Depuración de errores  (-50.0 %) 
+Modificación de los conocimientos  (50.0 %) 
+Ejecución de los casos de prueba  (-50.0 %) 
+
+Validación y Verificación.
+
+Empareje cada componente de las ontologías con su definición..
+Conceptos -> Ideas básicas que se intentan formalizar. 
+Relaciones -> Enlace entre conceptos del dominio. 
+Funciones -> Tipo concreto de relación. 
+Instancias -> Representan objetos determinados de un concepto. 
+Axiomas -> Teoremas sobre las relaciones que deben cumplir los elementos de la ontología. 
+
+Clases de Ontologías.
+De dominio: Conocimiento específico de un dominio.  (50.0 %) 
+Genéricas: Definen conceptos comunes  y generales.  (50.0 %) 
+
+Las ontologías: (Respuesta múltiple).
+Generan información comprensible para humanos y ordenadores.  (25.0 %) 
+Son un método de clasificación automática.  (25.0 %) 
+Ayudan a la comprensión común.  (25.0 %) 
+Permiten la deducción de conocimiento a través de métodos automáticos.  (25.0 %) 
+
+En la Ingeniería de Conocimiento y la Ingeniería del Software, la validación y la verificación son procesos idénticos .
+
+Señale cuales de los siguientes criterios debemos verificar en un SBC:.
+Consistencia: Se comprueba si se alcanza un estado en conflicto con el mundo modelizado. (50.0 %) 
+Incompletitud: Se permiten lagunas en la capacidad deductiva.  (-100.0 %) 
+Precisión: La sintaxis es correcta y no hay errores morfológicos. (50.0 %) 
+
+Las ontologías no se deben utilizar para la especificación formal de requerimientos .
+
+En una ontología, definimos los axiomas como relaciones entre los conceptos.
+
+Ontologías.
+Permiten restringir la seguridad (50.0 %) 
+Proveen conocimiento entendible por humanos y computadoras (-50.0 %) 
+Proveen acceso común al conocimiento (-50.0 %) 
+Crean incertidumbre  (50.0 %) 
+
+RDF es un formato para describir información y conceptos representados mediante tripletas que combinan recursos, propiedades y valores.
+
+Características de un Sistema Experto de calidad: (Respuesta múltiple).
+Base de conocimiento verificada. (25.0 %) 
+Cuenta con mecanismos de seguridad. (25.0 %) 
+Conclusiones correctas. (25.0 %) 
+Conclusiones congruentes. (25.0 %) 
+
+Que se cometan fallos en el proceso de validación y verificación no tiene una importancia trascendental, ya que ello no impide el correcto funcionamiento del sistema..
+
